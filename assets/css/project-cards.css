@@ -209,15 +209,15 @@
   --project-dark:#131a2a; --project-surface:#182235;
   --project-outline:rgba(244,168,58,.64);
 }
-.project-grid > .project-card.project-ember {
-  --project-accent:#ed8a24; --project-bright:#ffc07f;
-  --project-dark:#171620; --project-surface:#1b202c;
-  --project-outline:rgba(237,138,36,.65);
+.project-grid > .project-card.project-crimson {
+  --project-accent:#c44740; --project-bright:#f1b0a9;
+  --project-dark:#111314; --project-surface:#222325;
+  --project-outline:rgba(196,71,64,.72);
 }
 .project-grid > .project-card.project-stone .project-art img {filter:saturate(.94) sepia(.13) contrast(1.08)}
 .project-grid > .project-card.project-cyan .project-art img {filter:saturate(1.25) contrast(1.1)}
 .project-grid > .project-card.project-gold .project-art img {filter:saturate(1.12) contrast(1.1)}
-.project-grid > .project-card.project-ember .project-art img {filter:saturate(1.24) contrast(1.12)}
+.project-grid > .project-card.project-crimson .project-art img {filter:saturate(.98) contrast(1.08)}
 
 /* The featured standalone game gets a wide editorial card in Projects. */
 .project-category--independent .project-grid > .project-card {

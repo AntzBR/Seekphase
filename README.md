@@ -8,7 +8,7 @@ Primeiro esboço do site institucional e portfólio da **Seekphase Studios**.
 
 - Estúdio independente de desenvolvimento e publicação de games e software.
 - Navegação **Projects → Independent Games / Minecraft Projects**, sem separar o estúdio em marcas diferentes.
-- Site de apresentação com foco nos projetos **StoneWeald**, **Obsidrel**, **UltimateClans** e **UltimateRaids**.
+- Site de apresentação com foco nos projetos **StoneWeald**, **Obsidrel**, **UltimateClans** e **RaidWeaver** (identidade de apresentação do UltimateRaids).
 - Visual *Editorial Tech*: hero grafite, verde mineral, seção de portfólio clara, progressão `Seek → Discover → Create → Evolve`.
 - Cada categoria do portfólio possui um painel editorial próprio: horizontes e linhas orgânicas para **Independent Games**; geometria modular e tons frios para **Minecraft Projects**. Ambos usam somente CSS/SVG inline.
 - HTML, CSS e JavaScript sem framework, sem build obrigatório.
@@ -29,12 +29,12 @@ Seekphase/
 │   ├── stoneweald.html
 │   ├── obsidrel.html
 │   ├── ultimateclans.html
-│   └── ultimateraids.html
+│   ├── raidweaver.html            # Página atual\n│   └── ultimateraids.html        # Redirecionamento legado
 ├── assets/
 │   ├── css/
 │   │   ├── style.css
 │   │   ├── responsive.css
-│   │   └── animations.css
+│   │   ├── animations.css\n│   │   ├── project-cards.css\n│   │   └── raidweaver.css
 │   ├── js/
 │   │   └── main.js
 │   ├── icons/
@@ -43,7 +43,7 @@ Seekphase/
 │       ├── stoneweald.svg
 │       ├── obsidrel.svg
 │       ├── ultimateclans.svg
-│       └── ultimateraids.svg
+│       ├── ultimateraids.svg      # Arte antiga, não mais usada nos cards\n│       └── raidweaver-*.webp     # Artes conceituais da apresentação
 ├── journal/
 │   └── posts/
 │       └── README.md          # Espaço reservado para publicações
