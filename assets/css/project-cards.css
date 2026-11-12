@@ -1,0 +1,283 @@
+/*
+  Project card design — Seekphase portfolio.
+  This dedicated, late-loaded sheet intentionally overrides the older, subtle
+  accent-only card rules in style.css. Each product's core colors are isolated.
+*/
+.project-grid > .project-card {
+  --project-accent: #e6ad64;
+  --project-bright: #f4d1a0;
+  --project-dark: #202827;
+  --project-surface: #252b2a;
+  --project-outline: rgba(230,173,100,.52);
+  isolation: isolate;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-width: 0;
+  min-height: 394px;
+  border: 1px solid var(--project-outline);
+  border-radius: 18px;
+  background: var(--project-dark);
+  box-shadow: 0 16px 34px #10251d20;
+  color: #f5f4f1;
+  transition: transform .24s ease, box-shadow .24s ease, border-color .24s ease;
+}
+.project-grid > .project-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg,var(--project-accent),transparent 85%);
+}
+.project-grid > .project-card:hover,
+.project-grid > .project-card:focus-visible {
+  border-color: var(--project-accent);
+  transform: translateY(-5px);
+  box-shadow: 0 24px 50px #12212b38,0 0 0 1px var(--project-outline);
+}
+.project-grid > .project-card .project-art {
+  position: relative;
+  height: auto;
+  min-height: 0;
+  flex: 0 0 auto;
+  width: 100%;
+  aspect-ratio: 1.42 / 1;
+  overflow: hidden;
+  background: var(--project-dark);
+  border: 0;
+}
+.project-grid > .project-card .project-art::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background: linear-gradient(180deg,rgba(9,16,19,.44) 0%,transparent 30%,rgba(8,15,17,.28) 54%,var(--project-dark) 100%);
+  pointer-events: none;
+}
+.project-grid > .project-card .project-art::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background: radial-gradient(ellipse at 60% 40%,transparent 10%,var(--project-dark) 96%);
+  opacity: .23;
+  pointer-events: none;
+}
+.project-grid > .project-card .project-art img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1.02);
+  filter: saturate(1.07) contrast(1.05);
+  transition: transform .48s cubic-bezier(.25,.7,.2,1);
+}
+.project-grid > .project-card:hover .project-art img,
+.project-grid > .project-card:focus-visible .project-art img {
+  transform: scale(1.1);
+}
+.project-grid > .project-card .project-art-index {
+  position: absolute;
+  z-index: 2;
+  top: 18px;
+  left: 20px;
+  display: inline-flex;
+  gap: 11px;
+  align-items: center;
+  color: var(--project-bright);
+  font-size: .61rem;
+  font-weight: 840;
+  letter-spacing: .16em;
+  line-height: 1.2;
+  text-shadow: 0 2px 8px #0007;
+}
+.project-grid > .project-card .project-art-index > span {
+  padding-left: 10px;
+  border-left: 1px solid #f0eae763;
+  color: #e9eef0;
+  font-weight: 700;
+}
+.project-grid > .project-card .project-art-identity {
+  position: absolute;
+  z-index: 2;
+  bottom: 20px;
+  left: 20px;
+  right: 14px;
+}
+.project-grid > .project-card .project-art-overline {
+  display: block;
+  color: var(--project-bright);
+  font-size: .65rem;
+  font-weight: 850;
+  letter-spacing: .17em;
+  margin-bottom: 8px;
+  text-shadow: 0 2px 10px #0009;
+}
+.project-grid > .project-card .project-art-identity h3 {
+  color: #fffaf5;
+  margin: 0;
+  font-size: clamp(1.7rem,2.45vw,2.55rem);
+  line-height: 1.1;
+  letter-spacing: -.035em;
+  font-weight: 830;
+  text-shadow: 0 3px 16px #000a;
+  overflow-wrap: anywhere;
+}
+.project-grid > .project-card .project-info {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 19px 20px 20px;
+  border-top: 1px solid var(--project-outline);
+  background: var(--project-surface);
+  gap: 17px;
+}
+.project-grid > .project-card .project-description {
+  min-height: 0;
+}
+.project-grid > .project-card .project-info-kind {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--project-accent);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  font-size: .65rem;
+  font-weight: 820;
+}
+.project-grid > .project-card .project-description p {
+  margin: 0;
+  min-height: 0;
+  color: #ced7d7;
+  font-size: .87rem;
+  line-height: 1.47;
+}
+.project-grid > .project-card .project-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 0;
+  margin-top: auto;
+}
+.project-grid > .project-card .project-status {
+  padding: 5px 10px;
+  border: 1px solid var(--project-outline);
+  border-radius: 5px;
+  color: var(--project-bright);
+  background: var(--project-dark);
+  font-size: .69rem;
+  font-weight: 760;
+  white-space: nowrap;
+}
+.project-grid > .project-card .project-visit {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--project-bright);
+  font-weight: 790;
+  font-size: .75rem;
+  white-space: nowrap;
+}
+.project-grid > .project-card .project-arrow {
+  font-size: 1.15rem;
+  color: var(--project-accent);
+  transition: transform .2s ease;
+}
+.project-grid > .project-card:hover .project-arrow { transform: translate(3px,-3px); }
+
+/* Four independent and strongly distinguishable art directions. */
+.project-grid > .project-card.project-stone {
+  --project-accent:#e6ad64; --project-bright:#f8cf92;
+  --project-dark:#1e2824; --project-surface:#272c29;
+  --project-outline:rgba(230,173,100,.64);
+}
+.project-grid > .project-card.project-cyan {
+  --project-accent:#38b8c4; --project-bright:#81e6ed;
+  --project-dark:#071b2b; --project-surface:#0f2638;
+  --project-outline:rgba(56,184,196,.65);
+}
+.project-grid > .project-card.project-gold {
+  --project-accent:#f4a83a; --project-bright:#ffd192;
+  --project-dark:#131a2a; --project-surface:#182235;
+  --project-outline:rgba(244,168,58,.64);
+}
+.project-grid > .project-card.project-ember {
+  --project-accent:#ed8a24; --project-bright:#ffc07f;
+  --project-dark:#171620; --project-surface:#1b202c;
+  --project-outline:rgba(237,138,36,.65);
+}
+.project-grid > .project-card.project-stone .project-art img {filter:saturate(.94) sepia(.13) contrast(1.08)}
+.project-grid > .project-card.project-cyan .project-art img {filter:saturate(1.25) contrast(1.1)}
+.project-grid > .project-card.project-gold .project-art img {filter:saturate(1.12) contrast(1.1)}
+.project-grid > .project-card.project-ember .project-art img {filter:saturate(1.24) contrast(1.12)}
+
+/* The featured standalone game gets a wide editorial card in Projects. */
+.project-category--independent .project-grid > .project-card {
+  display: grid;
+  grid-template-columns: 1.25fr .75fr;
+  min-height: 340px;
+}
+.project-category--independent .project-grid > .project-card .project-art {
+  height: 100%;
+  aspect-ratio: auto;
+}
+.project-category--independent .project-grid > .project-card .project-info {
+  padding: clamp(26px,4vw,48px);
+  justify-content: flex-end;
+  gap: 36px;
+  border-top: none;
+  border-left: 1px solid var(--project-outline);
+}
+.project-category--independent .project-grid > .project-card .project-art-identity {
+  bottom: 28px;
+  left: 30px;
+}
+.project-category--independent .project-grid > .project-card .project-art-identity h3 {
+  font-size: clamp(2.4rem,4.5vw,4.3rem);
+}
+.project-category--independent .project-grid > .project-card .project-description p {
+  font-size: 1.12rem;
+  color: #e2e5de;
+}
+@media(max-width:1230px) {
+  .project-grid > .project-card .project-art {aspect-ratio:1.62/1}
+}
+@media(max-width:820px) {
+  .project-category--independent .project-grid > .project-card {
+    grid-template-columns: 1fr;
+  }
+  .project-category--independent .project-grid > .project-card .project-art {
+    height: auto;
+    aspect-ratio: 1.65/1;
+  }
+  .project-category--independent .project-grid > .project-card .project-info {
+    border-top: 1px solid var(--project-outline);
+    border-left: none;
+    padding: 22px;
+    gap: 18px;
+  }
+}
+@media(max-width:520px) {
+  .project-grid > .project-card {min-height:0}
+  .project-grid > .project-card .project-art {aspect-ratio: 1.6/1}
+  .project-grid > .project-card .project-art-identity h3 {font-size:2.05rem}
+  .project-grid > .project-card .project-info {padding:18px}
+  .project-grid > .project-card .project-art-index {top:14px;left:17px}
+  .project-grid > .project-card .project-art-identity {left:17px;bottom:17px}
+  .project-category--independent .project-grid > .project-card .project-art-identity {left:18px;bottom:20px}
+  .project-category--independent .project-grid > .project-card .project-art-identity h3 {font-size:2.4rem}
+  .project-category--independent .project-grid > .project-card .project-description p {font-size:1rem}
+}
+@media(prefers-reduced-motion:reduce){
+  .project-grid > .project-card,
+  .project-grid > .project-card .project-art img,
+  .project-grid > .project-card .project-arrow { transition:none }
+}
