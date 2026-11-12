@@ -70,3 +70,25 @@
 .category-feature--minecraft .category-feature-art::before{border-radius:6px;transform:rotate(-22deg)}
 .category-gallery-label{display:flex;justify-content:space-between;gap:12px;color:#65796b;font-size:.68rem;font-weight:800;letter-spacing:.16em;margin:0 0 16px}
 .project-category--minecraft .category-gallery-label{color:#597c7c}
+
+/* Match the project-card atmosphere to the corresponding product page. */
+.project-grid .project-card{position:relative;border:1px solid var(--brand-line);background:var(--brand-surface);box-shadow:0 16px 33px #19231e29;color:#f4f2ed}
+.project-grid .project-card:before{position:absolute;content:"";z-index:2;top:0;left:0;right:0;height:3px;background:var(--brand-accent)}
+.project-grid .project-card .project-art{position:relative;border-bottom:1px solid var(--brand-line);background:var(--brand-surface)}
+.project-grid .project-card .project-info{background:var(--brand-surface)}
+.project-grid .project-card .project-info h3{color:#f4f2ee}
+.project-grid .project-card .project-info p{color:#c6ccd0}
+.project-grid .project-card .project-label,.project-grid .project-card .project-arrow{color:var(--brand-accent)}
+.project-grid .project-card .project-status{color:var(--brand-accent);background:var(--brand-chip);border:1px solid var(--brand-line)}
+.project-grid .project-card:hover{border-color:var(--brand-accent);box-shadow:0 24px 48px var(--brand-shadow)}
+.project-grid .project-card.project-stone{--brand-accent:#e6ad64;--brand-surface:#272c29;--brand-chip:#4a3828;--brand-line:#887052;--brand-shadow:#49362185}
+.project-grid .project-card.project-cyan{--brand-accent:#38b8c4;--brand-surface:#102838;--brand-chip:#153b4b;--brand-line:#2b6f88;--brand-shadow:#16485b85}
+.project-grid .project-card.project-gold{--brand-accent:#f4a83a;--brand-surface:#161f30;--brand-chip:#3b2b22;--brand-line:#785b37;--brand-shadow:#45301b85}
+.project-grid .project-card.project-ember{--brand-accent:#ed8a24;--brand-surface:#1a1e29;--brand-chip:#3c2921;--brand-line:#845032;--brand-shadow:#52251785}
+.category-path--independent{background:radial-gradient(ellipse at 85% 35%,#a9784868,transparent 55%),linear-gradient(115deg,#30312b,#272b25)}
+.category-path--independent .category-path-eyebrow{color:#e6ad64}
+.category-path--independent .category-path-art--horizon{background:repeating-radial-gradient(ellipse at 96% 100%,transparent 0 23px,#e6ad645f 24px 25px,transparent 26px 40px)}
+.category-feature--independent{background:radial-gradient(ellipse at 85% 50%,#8e6b4563,transparent 47%),linear-gradient(115deg,#292e29,#363127)}
+.category-feature--independent .category-feature-kicker{color:#e6ad64}
+.category-feature--independent .feature-indicator{background:#e6ad64;box-shadow:0 0 0 4px #e6ad6428}
+.category-feature--independent .category-feature-footer{color:#e4c8a3}
