@@ -4,15 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#1C2426">
-  <meta name="description" content="A creative toolkit for building and managing custom Minecraft experiences.">
-  <title>Obsidrel | Seekphase Studios</title>
+  <meta name="description" content="Obsidrel is a Minecraft content engine for custom items, blocks, furniture, entities and interfaces. Explore the project at Seekphase Studios.">
+  <title>Obsidrel — Custom Minecraft Content | Seekphase Studios</title>
   <link rel="icon" href="../assets/icons/seekphase-mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../assets/css/animations.css">
   <link rel="stylesheet" href="../assets/css/responsive.css">
+  <link rel="stylesheet" href="../assets/css/obsidrel.css">
   <script src="../assets/js/main.js" defer></script>
 </head>
-<body>
+<body class="obsidrel-page">
   <a class="skip-link" href="#main">Skip to main content</a>
   <header class="site-header">
     <div class="container header-inner">
@@ -40,8 +41,126 @@
       <a class="header-action" href="../projects.html">Our projects <span aria-hidden="true">↗</span></a>
     </div>
   </header>
-  <main id="main"><section class="page-hero project-page-hero project-page-cyan"><div class="container detail-hero"><div class="reveal"><a class="back-link" href="../projects.html#minecraft-projects">← All projects</a><span class="eyebrow">CREATION TOOLS / SEEKPHASE</span><h1>Obsidrel</h1><p>A creative toolkit for building and managing custom Minecraft experiences.</p><span class="detail-status">In development</span></div><img class="detail-art" src="../assets/images/obsidrel.svg" alt="Conceptual illustration for Obsidrel" width="640" height="320"></div></section>
-<section class="section section-light"><div class="container detail-grid"><div class="reveal"><span class="section-kicker">PROJECT OVERVIEW</span><h2>Create, import and manage custom Minecraft content.</h2></div><div class="reveal"><p class="detail-body">Obsidrel brings together content creation tools and import workflows for custom items, blocks, entities, interfaces and other Minecraft resources.</p><div class="topic-row"><span class="topic-chip">Custom content</span><span class="topic-chip">Creator tools</span><span class="topic-chip">Import workflows</span></div><div class="note-line">This is a first-draft presentation. Official screenshots, detailed features and project links will be added after review.</div><a class="button button-dark" href="../projects.html">Explore other projects ↗</a></div></div></section></main>
+  
+<main id="main" class="obs">
+  <section class="obs-hero" aria-labelledby="obs-title">
+    <div class="obs-noise" aria-hidden="true"></div>
+    <div class="container obs-hero-layout">
+      <div class="obs-hero-content reveal">
+        <a class="obs-back" href="../projects.html#minecraft-projects">← Minecraft Projects / Seekphase Studios</a>
+        <div class="obs-label"><span class="obs-label-line"></span> OBSIDREL ENGINE <span class="obs-label-dot">·</span> CORE + ADDONS</div>
+        <h1 id="obs-title">Obsidrel <span class="obs-core-word">Core.</span><br><em>Custom Minecraft content.</em></h1>
+        <p class="obs-lead">Create, import and manage custom items, blocks, furniture, entities, interfaces and resource packs — with one content engine.</p>
+        <div class="obs-hero-actions">
+          <a class="obs-btn obs-btn--primary" href="https://obsidrel.com/" target="_blank" rel="noopener noreferrer">Official Website <span aria-hidden="true">↗</span></a>
+          <a class="obs-btn obs-btn--secondary" href="https://obsidrel.com/#get-obsidrel" target="_blank" rel="noopener noreferrer">Get Obsidrel <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="obs-hero-tags" aria-label="Project highlights">
+          <span><span class="obs-tag-mark" aria-hidden="true">◇</span> Custom content</span>
+          <span><span class="obs-tag-mark" aria-hidden="true">▣</span> Core + Addons</span>
+          <span><span class="obs-tag-mark" aria-hidden="true">⌘</span> Java 21</span>
+        </div>
+      </div>
+      <div class="obs-hero-visual reveal" aria-label="Illustrative Obsidrel visual concept">
+        <div class="obs-halo" aria-hidden="true"></div>
+        <div class="obs-hero-frame">
+          <div class="obs-frame-corner obs-frame-corner--tl" aria-hidden="true"></div>
+          <div class="obs-frame-corner obs-frame-corner--br" aria-hidden="true"></div>
+          <div class="obs-frame-topline"><span>OBSIDREL / CORE</span><span>CONTENT ENGINE</span></div>
+          <img src="../assets/images/obsidrel.svg" alt="Abstract illustration of a cyan custom-content block" width="640" height="320" fetchpriority="high">
+          <div class="obs-frame-bottom"><span class="obs-status-signal" aria-hidden="true"></span> ITEMS · ENTITIES · INTERFACES</div>
+        </div>
+        <div class="obs-floating-label" aria-hidden="true"><span>01</span> BUILD <b>→</b> IMPORT <b>→</b> CREATE</div>
+      </div>
+    </div>
+    <div class="obs-hero-floor" aria-hidden="true"></div>
+  </section>
+
+  <section class="obs-capabilities" aria-label="Obsidrel ecosystem areas">
+    <div class="container obs-capabilities-grid">
+      <div><span class="obs-cap-icon" aria-hidden="true">⬡</span><strong>Powerful Core</strong><small>One content engine</small></div>
+      <div><span class="obs-cap-icon" aria-hidden="true">▱</span><strong>Addon ecosystem</strong><small>Official integrations</small></div>
+      <div><span class="obs-cap-icon" aria-hidden="true">✳</span><strong>Built for creators</strong><small>Flexible workflows</small></div>
+      <div><span class="obs-cap-icon" aria-hidden="true">◇</span><strong>Server-focused</strong><small>Extensible by design</small></div>
+    </div>
+  </section>
+
+  <section class="obs-section obs-content-section" id="core">
+    <div class="container">
+      <div class="obs-section-head reveal">
+        <div>
+          <span class="obs-section-label">01 / OBSIDREL CORE</span>
+          <h2>Custom content.<br><em>One engine.</em></h2>
+        </div>
+        <p>Items, models and interfaces running through one content pipeline — from imported resources to in-game experiences.</p>
+      </div>
+      <div class="obs-work-grid">
+        <article class="obs-work-card obs-work-card--large reveal">
+          <div class="obs-work-visual obs-work-visual--content" aria-hidden="true">
+            <div class="obs-particle obs-particle--one"></div>
+            <div class="obs-particle obs-particle--two"></div>
+            <div class="obs-particle obs-particle--three"></div>
+            <div class="obs-content-cube"><span></span><span></span><span></span></div>
+            <div class="obs-work-orbit"></div>
+          </div>
+          <div class="obs-work-caption"><div><span>01 / IN-GAME CONTENT</span><h3>Core in action</h3><p>Build experiences with custom resources and behaviors.</p></div><span class="obs-card-arrow" aria-hidden="true">↗</span></div>
+        </article>
+        <article class="obs-work-card reveal">
+          <div class="obs-work-visual obs-work-visual--hud" aria-hidden="true">
+            <div class="obs-hud-preview">
+              <div class="obs-hud-header"><span class="obs-hud-glyph">✦</span><span class="obs-hud-lines"></span><span class="obs-hud-tag"></span></div>
+              <div class="obs-hud-row"><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="obs-hud-cells"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="obs-hud-footer"><i></i><i></i><i></i></div>
+            </div>
+          </div>
+          <div class="obs-work-caption"><div><span>02 / IN-GAME EXPERIENCE</span><h3>HUD &amp; Interfaces</h3><p>Interfaces and menus designed around custom content.</p></div><span class="obs-card-arrow" aria-hidden="true">↗</span></div>
+        </article>
+      </div>
+      <div class="obs-feature-list reveal" aria-label="Core features">
+        <div><span>01</span>Items &amp; Blocks</div>
+        <div><span>02</span>Furniture</div>
+        <div><span>03</span>Entities &amp; Animations</div>
+        <div><span>04</span>Recipes &amp; Loot</div>
+        <div><span>05</span>Actions &amp; Conditions</div>
+        <div><span>06</span>HUD &amp; Interfaces</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="obs-section obs-ecosystem-section" id="ecosystem">
+    <div class="container">
+      <div class="obs-section-head reveal">
+        <div><span class="obs-section-label">02 / CORE + ADDONS</span><h2>Explore <em>Obsidrel.</em></h2></div>
+        <p>One ecosystem for creating, importing, organizing and extending custom Minecraft content.</p>
+      </div>
+      <div class="obs-ecosystem-grid">
+        <article class="obs-module reveal"><span class="obs-module-icon" aria-hidden="true">⬡</span><h3>Obsidrel Core</h3><p>Custom items, blocks, furniture, entities, and resource packs.</p><span class="obs-module-index">01 / ENGINE</span></article>
+        <article class="obs-module reveal"><span class="obs-module-icon" aria-hidden="true">▱</span><h3>Official Importers</h3><p>Bring supported content from existing Minecraft creator tools.</p><span class="obs-module-index">02 / INTEGRATION</span></article>
+        <article class="obs-module reveal"><span class="obs-module-icon" aria-hidden="true">⌘</span><h3>Obsidrel Skript</h3><p>Connect custom content with scripts and gameplay logic.</p><span class="obs-module-index">03 / SCRIPTING</span></article>
+        <article class="obs-module reveal"><span class="obs-module-icon" aria-hidden="true">▣</span><h3>Obsidrel Studio</h3><p>Organize and edit Obsidrel projects and resources.</p><span class="obs-module-index">04 / WORKSPACE</span></article>
+        <article class="obs-module reveal"><span class="obs-module-icon" aria-hidden="true">≡</span><h3>Documentation</h3><p>Guides, setup information and technical references.</p><span class="obs-module-index">05 / LEARN</span></article>
+        <article class="obs-module reveal"><span class="obs-module-icon" aria-hidden="true">◌</span><h3>Support</h3><p>Help, community discussions and project updates.</p><span class="obs-module-index">06 / COMMUNITY</span></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="obs-section obs-final-section" id="get-obsidrel">
+    <div class="container obs-final-panel reveal">
+      <div class="obs-final-symbol" aria-hidden="true"><img src="../assets/images/obsidrel.svg" alt="" loading="lazy" width="640" height="320"></div>
+      <div class="obs-final-copy">
+        <span class="obs-section-label">03 / OFFICIAL PROJECT</span>
+        <h2>Explore what's possible with Obsidrel.</h2>
+        <p>Discover the Core, creator tools and official resources on the Obsidrel website.</p>
+        <div class="obs-hero-actions">
+          <a class="obs-btn obs-btn--primary" href="https://obsidrel.com/" target="_blank" rel="noopener noreferrer">Visit obsidrel.com <span aria-hidden="true">↗</span></a>
+          <a class="obs-btn obs-btn--secondary" href="https://obsidrel.com/#get-obsidrel" target="_blank" rel="noopener noreferrer">Get Obsidrel <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="container obs-page-note">Visual direction adapted from official Obsidrel references. Illustrative content and interface visuals are placeholders, not captured gameplay screenshots.</div>
+  </section>
+</main>
   <footer class="site-footer">
     <div class="container footer-inner">
       <div><a class="footer-brand" href="../index.html">seekphase<span>.</span></a><p>Independent development and publishing of games, software and digital experiences.</p></div>
