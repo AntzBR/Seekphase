@@ -25,7 +25,14 @@
       <button class="menu-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="Open navigation"><span></span><span></span><span></span></button>
       <nav id="site-navigation" class="site-nav" aria-label="Primary">
         <a href="index.html" >Home</a>
-        <a href="projects.html" >Projects</a>
+        <details class="nav-projects">
+          <summary>Projects <span class="nav-chevron" aria-hidden="true">⌄</span></summary>
+          <div class="projects-submenu">
+            <a href="projects.html">All Projects</a>
+            <a href="projects.html#independent-games">Independent Games</a>
+            <a href="projects.html#minecraft-projects">Minecraft Projects</a>
+          </div>
+        </details>
         <a href="studio.html" >Studio</a>
         <a href="journal.html" >Journal</a>
         <a href="contact.html" aria-current="page">Contact</a>

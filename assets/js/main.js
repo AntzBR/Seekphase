@@ -25,6 +25,22 @@
       if (!nav.contains(event.target) && !toggle.contains(event.target)) closeMenu();
     });
   }
+  // Native details handles category navigation without JS; this only improves dismissal.
+  const projectsMenu = document.querySelector('.nav-projects');
+  if (projectsMenu) {
+    document.addEventListener('click', event => {
+      if (!projectsMenu.contains(event.target)) projectsMenu.open = false;
+    });
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && projectsMenu.open) {
+        projectsMenu.open = false;
+        projectsMenu.querySelector('summary')?.focus();
+      }
+    });
+    projectsMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => { projectsMenu.open = false; });
+    });
+  }
   document.querySelectorAll('[data-year]').forEach(el => {
     el.textContent = String(new Date().getFullYear());
   });

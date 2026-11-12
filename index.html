@@ -25,7 +25,14 @@
       <button class="menu-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="Open navigation"><span></span><span></span><span></span></button>
       <nav id="site-navigation" class="site-nav" aria-label="Primary">
         <a href="index.html" aria-current="page">Home</a>
-        <a href="projects.html" >Projects</a>
+        <details class="nav-projects">
+          <summary>Projects <span class="nav-chevron" aria-hidden="true">⌄</span></summary>
+          <div class="projects-submenu">
+            <a href="projects.html">All Projects</a>
+            <a href="projects.html#independent-games">Independent Games</a>
+            <a href="projects.html#minecraft-projects">Minecraft Projects</a>
+          </div>
+        </details>
         <a href="studio.html" >Studio</a>
         <a href="journal.html" >Journal</a>
         <a href="contact.html" >Contact</a>
@@ -58,9 +65,14 @@
 <section class="section section-light" id="projects">
  <div class="container">
    <div class="section-heading reveal"><div><span class="section-kicker">01 / SELECTED WORK</span><h2>Our Projects</h2><p>Original creations and tools for different communities and platforms.</p></div><a class="text-link" href="projects.html">View all projects <span aria-hidden="true">↗</span></a></div>
-   <div class="project-grid"><a class="project-card project-sage reveal" href="projects/stoneweald.html" aria-label="Explore STONEWEALD">
+   <div class="home-category-links reveal" aria-label="Explore project categories">
+    <span>Browse by category</span>
+    <a href="projects.html#independent-games">Independent Games <span aria-hidden="true">↗</span></a>
+    <a href="projects.html#minecraft-projects">Minecraft Projects <span aria-hidden="true">↗</span></a>
+   </div>
+   <div class="project-grid"><a class="project-card project-sage reveal" href="projects/stoneweald.html" aria-label="Explore StoneWeald">
   <div class="project-art"><img src="assets/images/stoneweald.svg" alt="" loading="lazy" width="640" height="320"></div>
-  <div class="project-info"><div class="project-label">Original game</div><h3>STONEWEALD</h3><p>A living prehistoric world.</p><div class="project-meta"><span class="project-status">In development</span><span class="project-arrow" aria-hidden="true">↗</span></div></div>
+  <div class="project-info"><div class="project-label">Original game</div><h3>StoneWeald</h3><p>A living prehistoric world.</p><div class="project-meta"><span class="project-status">In development</span><span class="project-arrow" aria-hidden="true">↗</span></div></div>
 </a>
 <a class="project-card project-cyan reveal" href="projects/obsidrel.html" aria-label="Explore Obsidrel">
   <div class="project-art"><img src="assets/images/obsidrel.svg" alt="" loading="lazy" width="640" height="320"></div>

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#1C2426">
-  <meta name="description" content="Explore Seekphase Studios projects: STONEWEALD, Obsidrel, UltimateClans and UltimateRaids.">
+  <meta name="description" content="Explore Seekphase Studios projects: StoneWeald, Obsidrel, UltimateClans and UltimateRaids.">
   <title>Projects | Seekphase Studios</title>
   <link rel="icon" href="assets/icons/seekphase-mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -25,7 +25,14 @@
       <button class="menu-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="Open navigation"><span></span><span></span><span></span></button>
       <nav id="site-navigation" class="site-nav" aria-label="Primary">
         <a href="index.html" >Home</a>
-        <a href="projects.html" aria-current="page">Projects</a>
+        <details class="nav-projects is-current">
+          <summary>Projects <span class="nav-chevron" aria-hidden="true">⌄</span></summary>
+          <div class="projects-submenu">
+            <a href="projects.html">All Projects</a>
+            <a href="projects.html#independent-games">Independent Games</a>
+            <a href="projects.html#minecraft-projects">Minecraft Projects</a>
+          </div>
+        </details>
         <a href="studio.html" >Studio</a>
         <a href="journal.html" >Journal</a>
         <a href="contact.html" >Contact</a>
@@ -33,19 +40,39 @@
       <a class="header-action" href="projects.html">Our projects <span aria-hidden="true">↗</span></a>
     </div>
   </header>
-  <main id="main"><section class="page-hero"><div class="container reveal"><span class="eyebrow">01 / OUR WORK</span><h1>Projects worth exploring.</h1><p>Games, creative software and community tools — each with its own direction and purpose.</p></div></section><section class="section section-light"><div class="container"><div class="project-grid"><a class="project-card project-sage reveal" href="projects/stoneweald.html" aria-label="Explore STONEWEALD">
+  <main id="main"><section class="page-hero"><div class="container reveal"><span class="eyebrow">01 / OUR WORK</span><h1>Projects worth exploring.</h1><p>Games, creative software and community tools — each with its own direction and purpose.</p></div></section><section class="section section-light"><div class="container"><nav class="project-category-nav reveal" aria-label="Browse projects by category">
+    <a href="#independent-games">Independent Games <span aria-hidden="true">↗</span></a>
+    <a href="#minecraft-projects">Minecraft <span aria-hidden="true">↗</span></a>
+  </nav>
+  <section class="project-category project-category--independent" id="independent-games" aria-labelledby="independent-title">
+    <div class="category-heading reveal">
+      <div><span class="section-kicker">01 / BEYOND MINECRAFT</span><h2 id="independent-title">Independent Games</h2><p>Original worlds and game experiences created beyond existing platforms.</p></div>
+      <span class="category-count">01 PROJECT</span>
+    </div>
+    <div class="project-grid category-grid"><a class="project-card project-sage reveal" href="projects/stoneweald.html" aria-label="Explore StoneWeald">
   <div class="project-art"><img src="assets/images/stoneweald.svg" alt="" loading="lazy" width="640" height="320"></div>
-  <div class="project-info"><div class="project-label">Original game</div><h3>STONEWEALD</h3><p>A living prehistoric world.</p><div class="project-meta"><span class="project-status">In development</span><span class="project-arrow" aria-hidden="true">↗</span></div></div>
-</a><a class="project-card project-cyan reveal" href="projects/obsidrel.html" aria-label="Explore Obsidrel">
+  <div class="project-info"><div class="project-label">Original game</div><h3>StoneWeald</h3><p>A living prehistoric world.</p><div class="project-meta"><span class="project-status">In development</span><span class="project-arrow" aria-hidden="true">↗</span></div></div>
+</a></div>
+  </section>
+  <section class="project-category project-category--minecraft" id="minecraft-projects" aria-labelledby="minecraft-title">
+    <div class="category-heading reveal">
+      <div><span class="section-kicker">02 / MINECRAFT ECOSYSTEM</span><h2 id="minecraft-title">Minecraft Projects</h2><p>Tools, gameplay systems and community features for Minecraft servers and creators.</p></div>
+      <span class="category-count">03 PROJECTS</span>
+    </div>
+    <div class="project-grid category-grid"><a class="project-card project-cyan reveal" href="projects/obsidrel.html" aria-label="Explore Obsidrel">
   <div class="project-art"><img src="assets/images/obsidrel.svg" alt="" loading="lazy" width="640" height="320"></div>
   <div class="project-info"><div class="project-label">Creation tools</div><h3>Obsidrel</h3><p>Create, import and manage custom Minecraft content.</p><div class="project-meta"><span class="project-status">In development</span><span class="project-arrow" aria-hidden="true">↗</span></div></div>
-</a><a class="project-card project-red reveal" href="projects/ultimateclans.html" aria-label="Explore UltimateClans">
+</a>
+<a class="project-card project-red reveal" href="projects/ultimateclans.html" aria-label="Explore UltimateClans">
   <div class="project-art"><img src="assets/images/ultimateclans.svg" alt="" loading="lazy" width="640" height="320"></div>
   <div class="project-info"><div class="project-label">Server software</div><h3>UltimateClans</h3><p>Tools for clans and player communities.</p><div class="project-meta"><span class="project-status">Maintained</span><span class="project-arrow" aria-hidden="true">↗</span></div></div>
-</a><a class="project-card project-violet reveal" href="projects/ultimateraids.html" aria-label="Explore UltimateRaids">
+</a>
+<a class="project-card project-violet reveal" href="projects/ultimateraids.html" aria-label="Explore UltimateRaids">
   <div class="project-art"><img src="assets/images/ultimateraids.svg" alt="" loading="lazy" width="640" height="320"></div>
   <div class="project-info"><div class="project-label">Gameplay systems</div><h3>UltimateRaids</h3><p>Flexible raids and challenges for servers.</p><div class="project-meta"><span class="project-status">Maintained</span><span class="project-arrow" aria-hidden="true">↗</span></div></div>
-</a></div><div class="note-line reveal"><strong>Independent creations.</strong> Project images in this first sketch are conceptual placeholders and will be replaced with official materials.</div></div></section></main>
+</a></div>
+  </section>
+  <div class="note-line reveal"><strong>Independent creations.</strong> Project images in this first sketch are conceptual placeholders and will be replaced with official materials.</div></div></section></main>
   <footer class="site-footer">
     <div class="container footer-inner">
       <div><a class="footer-brand" href="index.html">seekphase<span>.</span></a><p>Independent development and publishing of games, software and digital experiences.</p></div>
