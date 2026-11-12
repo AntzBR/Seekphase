@@ -4,15 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#1C2426">
-  <meta name="description" content="Clan and community systems for multiplayer Minecraft servers.">
-  <title>UltimateClans | Seekphase Studios</title>
+  <meta name="description" content="UltimateClans is a modular clan management platform for Minecraft servers, with addons, developer API, progression and optional multiserver systems.">
+  <title>UltimateClans — Modular Clan Platform | Seekphase Studios</title>
   <link rel="icon" href="../assets/icons/seekphase-mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../assets/css/animations.css">
   <link rel="stylesheet" href="../assets/css/responsive.css">
+  <link rel="stylesheet" href="../assets/css/ultimateclans.css">
   <script src="../assets/js/main.js" defer></script>
 </head>
-<body>
+<body class="ultimateclans-page">
   <a class="skip-link" href="#main">Skip to main content</a>
   <header class="site-header">
     <div class="container header-inner">
@@ -40,8 +41,126 @@
       <a class="header-action" href="../projects.html">Our projects <span aria-hidden="true">↗</span></a>
     </div>
   </header>
-  <main id="main"><section class="page-hero project-page-hero project-page-red"><div class="container detail-hero"><div class="reveal"><a class="back-link" href="../projects.html#minecraft-projects">← All projects</a><span class="eyebrow">SERVER SOFTWARE / SEEKPHASE</span><h1>UltimateClans</h1><p>Clan and community systems for multiplayer Minecraft servers.</p><span class="detail-status">Maintained</span></div><img class="detail-art" src="../assets/images/ultimateclans.svg" alt="Conceptual illustration for UltimateClans" width="640" height="320"></div></section>
-<section class="section section-light"><div class="container detail-grid"><div class="reveal"><span class="section-kicker">PROJECT OVERVIEW</span><h2>Tools for clans and player communities.</h2></div><div class="reveal"><p class="detail-body">UltimateClans provides features for player groups, cooperation and competition, with ongoing compatibility and maintenance work.</p><div class="topic-row"><span class="topic-chip">Communities</span><span class="topic-chip">Multiplayer</span><span class="topic-chip">Server tools</span></div><div class="note-line">This is a first-draft presentation. Official screenshots, detailed features and project links will be added after review.</div><a class="button button-dark" href="../projects.html">Explore other projects ↗</a></div></div></section></main>
+  <main id="main" class="uclans">
+  <section class="uclans-hero" aria-labelledby="uclans-title">
+    <div class="uclans-hero-texture" aria-hidden="true"></div>
+    <div class="container uclans-hero-layout">
+      <div class="uclans-hero-content reveal">
+        <a class="uclans-back" href="../projects.html#minecraft-projects">← Minecraft Projects / Seekphase Studios</a>
+        <div class="uclans-kicker"><span class="uclans-kicker-line" aria-hidden="true"></span> ULTIMATECLANS <span class="uclans-kicker-sep">/</span> CORE + MODULES + ADDONS</div>
+        <h1 id="uclans-title">More than a<br><em>clan plugin.</em></h1>
+        <p class="uclans-hero-lead">Build your power. Lead your clan. A flexible clan management system with progression, modular features and an expanding ecosystem for Minecraft servers.</p>
+        <div class="uclans-hero-actions">
+          <a class="uclans-button uclans-button--primary" href="https://pixeleast.com/product/990198-ultimate-clans" target="_blank" rel="noopener noreferrer">Explore UltimateClans <span aria-hidden="true">↗</span></a>
+          <a class="uclans-button uclans-button--outline" href="https://wiki.tribecraft.com.br/en/" target="_blank" rel="noopener noreferrer">Documentation <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="uclans-hero-tags">
+          <span>UltimateClans V9</span>
+          <span>Modular Core</span>
+          <span>Developer API</span>
+          <span>Multiserver Options</span>
+        </div>
+      </div>
+      <div class="uclans-hero-visual reveal" aria-label="Conceptual UltimateClans emblem">
+        <div class="uclans-emblem-grid" aria-hidden="true"></div>
+        <div class="uclans-emblem-halo" aria-hidden="true"></div>
+        <div class="uclans-emblem-card">
+          <div class="uclans-emblem-card-top"><span>ULTIMATECLANS / V9</span><span>EST. IN MINECRAFT</span></div>
+          <img src="../assets/images/ultimateclans.svg" width="640" height="320" alt="Conceptual shield artwork representing UltimateClans">
+          <div class="uclans-emblem-card-bottom"><span class="uclans-emblem-dot" aria-hidden="true"></span> CORE / MODULAR SYSTEM</div>
+        </div>
+        <span class="uclans-visual-caption">COMMUNITY <span aria-hidden="true">×</span> PROGRESSION <span aria-hidden="true">×</span> COMPETITION</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="uclans-pillars" aria-label="Platform foundations">
+    <div class="container uclans-pillars-grid">
+      <div><span class="uclans-pillar-number">01</span><strong>Addon Ecosystem</strong><small>Expand your clan experience</small></div>
+      <div><span class="uclans-pillar-number">02</span><strong>Developer API</strong><small>Integrate custom systems</small></div>
+      <div><span class="uclans-pillar-number">03</span><strong>Multiserver Ready</strong><small>Network-oriented options</small></div>
+      <div><span class="uclans-pillar-number">04</span><strong>Fully Configurable</strong><small>Adapt features to your server</small></div>
+    </div>
+  </section>
+
+  <section class="uclans-section uclans-core-section" id="core">
+    <div class="container">
+      <div class="uclans-section-head reveal">
+        <div><span class="uclans-section-label">01 / CORE EXPERIENCE</span><h2>Everything begins<br>with your <em>clan.</em></h2></div>
+        <p>Create meaningful communities with the essential systems for members, permissions, relationships and growth.</p>
+      </div>
+      <div class="uclans-feature-grid">
+        <article class="uclans-feature reveal"><span class="uclans-feature-number">01 / ORGANIZATION</span><span class="uclans-feature-icon" aria-hidden="true">◈</span><h3>Clans &amp; Members</h3><p>Create clans and manage invitations, profiles, members and settings.</p></article>
+        <article class="uclans-feature reveal"><span class="uclans-feature-number">02 / MANAGEMENT</span><span class="uclans-feature-icon" aria-hidden="true">⊞</span><h3>Roles &amp; Permissions</h3><p>Define clan hierarchies and control access to features.</p></article>
+        <article class="uclans-feature reveal"><span class="uclans-feature-number">03 / DIPLOMACY</span><span class="uclans-feature-icon" aria-hidden="true">⚑</span><h3>Alliances &amp; Rivalries</h3><p>Establish relationships between clans and manage rivals.</p></article>
+        <article class="uclans-feature reveal"><span class="uclans-feature-number">04 / COMMUNICATION</span><span class="uclans-feature-icon" aria-hidden="true">⌂</span><h3>Homes &amp; Communication</h3><p>Shared locations, clan chat, mail and configurable messaging.</p></article>
+        <article class="uclans-feature reveal"><span class="uclans-feature-number">05 / PROGRESSION</span><span class="uclans-feature-icon" aria-hidden="true">◇</span><h3>Progression &amp; Statistics</h3><p>Levels, points, player statistics, KDR and rankings.</p></article>
+        <article class="uclans-feature reveal"><span class="uclans-feature-number">06 / CUSTOMIZATION</span><span class="uclans-feature-icon" aria-hidden="true">▦</span><h3>Menus &amp; Customization</h3><p>Inventory-based interfaces, configurable behavior and messages.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="uclans-section uclans-modularity-section" id="modular">
+    <div class="container">
+      <div class="uclans-section-head reveal">
+        <div><span class="uclans-section-label">02 / SYSTEM ARCHITECTURE</span><h2>Modular <em>by design.</em></h2></div>
+        <p>Start with the Core and enable only what your server needs. Extend your setup over time without turning every feature into a requirement.</p>
+      </div>
+      <div class="uclans-architecture reveal" aria-label="Core, Modules and Addons">
+        <div class="uclans-arch-part uclans-arch-part--core"><span class="uclans-arch-code">01 / FOUNDATION</span><span class="uclans-arch-symbol" aria-hidden="true">⬡</span><strong>CORE</strong><p>Essential clan management.</p></div>
+        <span class="uclans-arch-connector" aria-hidden="true">+</span>
+        <div class="uclans-arch-part"><span class="uclans-arch-code">02 / FLEXIBILITY</span><span class="uclans-arch-symbol" aria-hidden="true">▣</span><strong>MODULES</strong><p>Enable the features you need.</p></div>
+        <span class="uclans-arch-connector" aria-hidden="true">+</span>
+        <div class="uclans-arch-part"><span class="uclans-arch-code">03 / EXPANSION</span><span class="uclans-arch-symbol" aria-hidden="true">✦</span><strong>ADDONS</strong><p>Go beyond the Core.</p></div>
+      </div>
+      <p class="uclans-architecture-note reveal">Core for essentials. Modules for flexibility. Addons for expansion.</p>
+    </div>
+  </section>
+
+  <section class="uclans-section uclans-addons-section" id="addons">
+    <div class="container">
+      <div class="uclans-section-head reveal">
+        <div><span class="uclans-section-label">03 / EXTEND YOUR EXPERIENCE</span><h2>Expand with <em>addons.</em></h2></div>
+        <p>A collection of optional systems for economy, progression, territory, competition and migration.</p>
+      </div>
+      <div class="uclans-addons-grid">
+        <article class="uclans-addon-group reveal"><div class="uclans-addon-heading"><span class="uclans-addon-glyph" aria-hidden="true">◉</span><h3>Economy &amp; Storage</h3></div><p>Give clans more ways to manage resources.</p><div class="uclans-addon-tags"><span>Bank</span><span>Chest</span><span>FarmCoins</span></div></article>
+        <article class="uclans-addon-group reveal"><div class="uclans-addon-heading"><span class="uclans-addon-glyph" aria-hidden="true">◇</span><h3>Progression &amp; Territory</h3></div><p>Set goals, build territory and grow together.</p><div class="uclans-addon-tags"><span>Quests</span><span>Lands</span><span>Nexus</span><span>Guardian</span></div></article>
+        <article class="uclans-addon-group reveal"><div class="uclans-addon-heading"><span class="uclans-addon-glyph" aria-hidden="true">⚔</span><h3>Competition</h3></div><p>Create rivalries, challenges and rankings.</p><div class="uclans-addon-tags"><span>War</span><span>Gladiator</span><span>League</span><span>Leaderboards</span></div></article>
+        <article class="uclans-addon-group reveal"><div class="uclans-addon-heading"><span class="uclans-addon-glyph" aria-hidden="true">⇄</span><h3>Migration</h3></div><p>Bring existing communities into UltimateClans.</p><div class="uclans-addon-tags"><span>Data Exchange</span><span>SimpleClans imports</span><span>ClansLite imports</span></div></article>
+      </div>
+      <p class="uclans-addon-footnote reveal">Addon availability and compatibility depend on the selected Core version and each addon release.</p>
+    </div>
+  </section>
+
+  <section class="uclans-section uclans-server-section" id="compatibility">
+    <div class="container">
+      <div class="uclans-section-head reveal">
+        <div><span class="uclans-section-label">04 / SERVERS &amp; INTEGRATIONS</span><h2>Built for Minecraft <em>servers.</em></h2></div>
+        <p>From individual communities to multi-server networks, choose the capabilities and storage model that fit your environment.</p>
+      </div>
+      <div class="uclans-tech-grid">
+        <article class="uclans-tech-card reveal"><span class="uclans-tech-index">01 / NETWORKS</span><h3>Multiserver Options</h3><p>Connect clan experiences across servers using the optional multiserver system. Configuration and network setup depend on enabled modules.</p></article>
+        <article class="uclans-tech-card reveal"><span class="uclans-tech-index">02 / INTEGRATIONS</span><h3>Developer API</h3><p>Build integrations with the Java API and supported services, including PlaceholderAPI.</p><a href="https://github.com/UlrichBR/UClans-API" target="_blank" rel="noopener noreferrer">View public API <span aria-hidden="true">↗</span></a></article>
+        <article class="uclans-tech-card reveal"><span class="uclans-tech-index">03 / STORAGE</span><h3>Flexible Storage</h3><p>Options for different server sizes and deployment strategies.</p><div class="uclans-compact-tags"><span>YAML</span><span>SQLite</span><span>MySQL</span></div></article>
+      </div>
+      <div class="uclans-versions reveal" aria-label="Versions and requirements">
+        <div class="uclans-versions-intro"><span class="uclans-section-label">VERSION &amp; COMPATIBILITY</span><h3>Modern and legacy branches.</h3><p>Choose the generation suited to your Minecraft server.</p></div>
+        <div class="uclans-version-row"><div><strong>UltimateClans V9</strong><small>Modern platform</small></div><div><b>Minecraft 1.18 → 26.3</b><small>Plugin: Java 17+*</small></div></div>
+        <div class="uclans-version-row"><div><strong>UltimateClans V8.21.0</strong><small>Legacy branch</small></div><div><b>Minecraft 1.8 → 26.2</b><small>Plugin: Java 8+*</small></div></div>
+        <p class="uclans-version-note">* Minecraft server builds can require newer Java runtimes than the plugin minimum. Check the official release documentation before deployment.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="uclans-section uclans-final-section">
+    <div class="container uclans-final-panel reveal">
+      <div class="uclans-final-mark" aria-hidden="true"><span>UC</span><small>V9</small></div>
+      <div class="uclans-final-copy"><span class="uclans-section-label">05 / ULTIMATECLANS</span><h2>Build your power.<br><em>Lead your clan.</em></h2><p>Explore the current project, official documentation and release details.</p><div class="uclans-hero-actions"><a class="uclans-button uclans-button--primary" href="https://pixeleast.com/product/990198-ultimate-clans" target="_blank" rel="noopener noreferrer">Product Page <span aria-hidden="true">↗</span></a><a class="uclans-button uclans-button--outline" href="https://wiki.tribecraft.com.br/en/" target="_blank" rel="noopener noreferrer">Official Wiki <span aria-hidden="true">↗</span></a></div></div>
+    </div>
+    <div class="container uclans-page-note">The emblem and interface shapes on this page are conceptual website artwork. They are not in-game screenshots.</div>
+  </section>
+</main>
   <footer class="site-footer">
     <div class="container footer-inner">
       <div><a class="footer-brand" href="../index.html">seekphase<span>.</span></a><p>Independent development and publishing of games, software and digital experiences.</p></div>
