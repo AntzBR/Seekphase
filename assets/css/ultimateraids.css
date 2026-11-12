@@ -1,0 +1,94 @@
+/* UltimateRaids product page — standalone atmosphere, no framework. */
+.ultimateraids-page{background:#11151f}
+.raids{--r-bg:#111722;--r-dark:#0e131d;--r-panel:#1b2330;--r-line:#39404b;--r-orange:#ed8a24;--r-amber:#f6b35b;--r-text:#f2f3f5;--r-muted:#b5bdc8;color:var(--r-text);background:var(--r-bg);overflow:hidden}
+.raids .container{position:relative}
+.raids h1,.raids h2,.raids h3{color:var(--r-text);letter-spacing:-.04em}
+.raids h1 em,.raids h2 em{font-style:normal;color:var(--r-orange)}
+.raids a:focus-visible{outline:3px solid #f6b35b;outline-offset:4px}
+.raids-hero{position:relative;isolation:isolate;background:radial-gradient(ellipse at 77% 53%,#79341b59,transparent 42%),linear-gradient(105deg,#111b2b,#0d121e 63%,#181219);overflow:hidden}
+.raids-hero:before{content:"";z-index:-1;pointer-events:none;position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 75px,#fba23a0b 76px 77px),linear-gradient(25deg,transparent 60%,#da6a1c0f 60.2%,transparent 60.5%);mask-image:linear-gradient(to right,transparent,#000)}
+.raids-hero-inner{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:clamp(28px,5vw,80px);padding-block:70px 88px;min-height:640px}
+.raids-hero-copy{z-index:1}
+.raids-back{display:inline-block;font-size:.8rem;color:#b5bdc8;margin-bottom:62px;font-weight:650}
+.raids-back:hover{color:var(--r-amber)}
+.raids-kicker{display:inline-flex;align-items:center;gap:10px;color:var(--r-amber);letter-spacing:.2em;font-size:.68rem;font-weight:850;text-transform:uppercase}
+.raids-rule{width:28px;height:2px;background:var(--r-orange)}
+.raids-hero h1{font-size:clamp(2.9rem,4.7vw,5.4rem);line-height:1.09;margin:24px 0;max-width:800px}
+.raids-hero-copy>p{max-width:580px;font-size:clamp(1rem,1.3vw,1.16rem);color:#cbd0da;line-height:1.72;margin-bottom:0}
+.raids-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:29px}
+.raids-button{display:inline-flex;align-items:center;justify-content:center;gap:16px;padding:12px 20px;min-height:49px;border-radius:8px;font-size:.86rem;font-weight:800;transition:background .2s,transform .2s,border-color .2s}
+.raids-button:hover{transform:translateY(-2px)}
+.raids-button-primary{background:linear-gradient(120deg,#e77b19,#f7ad4b);color:#161d26;box-shadow:0 8px 28px #b35a1936}
+.raids-button-primary:hover{background:linear-gradient(120deg,#f09332,#ffbd66)}
+.raids-button-outline{border:1px solid #74695d;color:#f3f1ef;background:#ffffff08}
+.raids-button-outline:hover{border-color:#f2a651;background:#f1993220}
+.raids-hero-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:38px;padding-top:20px;border-top:1px solid #9e673952}
+.raids-hero-tags span{font-size:.72rem;letter-spacing:.025em;color:#f4c48a;background:#e9973112;border:1px solid #9d693e72;border-radius:5px;padding:6px 10px}
+.raids-hero-art{min-width:0;position:relative;align-self:center;padding:10px 7px 32px}
+.raids-portal-frame{position:relative;border:1px solid #a36d435e;border-radius:12px;overflow:hidden;box-shadow:0 25px 75px #03040ab8,0 0 55px #d9692218;background:#0c0f18;transform:rotate(1.7deg)}
+.raids-portal-frame svg{display:block;width:100%;height:auto}
+.raids-art-label,.raids-art-bottom{position:absolute;left:0;right:0;z-index:1;padding:14px 18px;font-size:.58rem;letter-spacing:.2em;font-weight:850;color:#f9ce93;background:#0b0d17cc}
+.raids-art-label{top:0;border-bottom:1px solid #be743c6b}
+.raids-art-bottom{bottom:0;border-top:1px solid #be743c6b}
+.raids-hero-marker{display:block;color:#b78c65;font-size:.59rem;letter-spacing:.19em;font-weight:750;margin-top:20px;text-align:right}
+.raids-strip{background:#1a2230;border-top:1px solid #3a3b44;border-bottom:1px solid #3a3b44}
+.raids-strip-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.raids-strip-grid>div{padding:22px 16px;border-right:1px solid #57505a79;display:flex;flex-direction:column;gap:5px}
+.raids-strip-grid>div:last-child{border-right:0}
+.raids-strip-grid>div>span{font-weight:830;color:#f1a348;font-size:.68rem;letter-spacing:.17em}
+.raids-strip-grid strong{font-size:.85rem}
+.raids-strip-grid small{font-size:.73rem;color:#abb1bf}
+.raids-section{padding-block:82px}
+.raids-section-intro{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:32px}
+.raids-section-intro h2{font-size:clamp(2.5rem,4vw,4rem);line-height:1.1;margin:16px 0 0}
+.raids-section-intro>p{max-width:365px;color:#b8bfca;font-size:.94rem;line-height:1.72;margin:0 0 5px}
+.raids-section-core{background:linear-gradient(180deg,#131b28,#111823)}
+.raids-experience-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+.raids-experience{background:linear-gradient(145deg,#1b2837,#19202d);border:1px solid #41404a;border-radius:11px;padding:25px;min-height:222px;display:flex;flex-direction:column;transition:border-color .2s,transform .2s}
+.raids-experience:hover,.raids-environment:hover{border-color:#a77b4a;transform:translateY(-2px)}
+.raids-experience-index{font-size:.63rem;color:#f0aa62;letter-spacing:.16em;font-weight:800}
+.raids-experience-glyph{font-size:2.35rem;color:#f5ad51;margin:16px 0 11px;line-height:1}
+.raids-experience h3{font-size:1.22rem;margin:0 0 9px}
+.raids-experience p{font-size:.85rem;line-height:1.62;color:#b4bdca;margin:0}
+.raids-section-environments{background:#101621;border-block:1px solid #373943}
+.raids-environment-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.raids-environment{border:1px solid #3b4350;padding:25px 21px;background:#1a2230;border-radius:9px;min-height:169px;transition:border-color .2s,transform .2s}
+.raids-environment>span{display:inline-block;color:#ffad51;font-size:.73rem;font-weight:850;letter-spacing:.18em;margin-bottom:20px}
+.raids-environment h3{font-size:1.11rem;margin:0 0 9px}
+.raids-environment p{font-size:.81rem;line-height:1.62;color:#adb5c2;margin:0}
+.raids-section-flow{background:radial-gradient(ellipse at 80% 50%,#77321d30,transparent 55%),#151b27}
+.raids-flow-layout{display:grid;grid-template-columns:.9fr 1.1fr;align-items:center;gap:clamp(35px,8vw,115px)}
+.raids-flow-copy h2{font-size:clamp(2.5rem,4vw,4.1rem);margin:17px 0}
+.raids-flow-copy p{max-width:530px;color:#b7bfcb;line-height:1.75;font-size:.98rem}
+.raids-flow-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:25px}
+.raids-flow-tags span{border:1px solid #76634e;border-radius:5px;padding:6px 9px;font-size:.74rem;color:#efc08a;background:#a5692d14}
+.raids-stage-list{list-style:none;counter-reset:stage;padding:18px 30px;margin:0;border:1px solid #71553e;border-radius:13px;background:linear-gradient(145deg,#202332,#171c29);box-shadow:0 20px 40px #0004}
+.raids-stage-list li{display:flex;gap:18px;align-items:center;padding:18px 0;border-bottom:1px solid #51463f}
+.raids-stage-list li:last-child{border-bottom:0}
+.raids-stage-list li>span{display:grid;place-items:center;flex:none;border:1px solid #916339;border-radius:50%;width:43px;height:43px;font-weight:850;font-size:.76rem;color:#ffbd66;background:#b36b2522}
+.raids-stage-list li strong{display:block;font-size:1.03rem}
+.raids-stage-list li small{display:block;color:#acb4c1;font-size:.8rem;margin-top:3px}
+.raids-section-tools{background:#111720}
+.raids-tools-layout{display:grid;grid-template-columns:1fr .95fr;gap:clamp(30px,7vw,95px);align-items:center}
+.raids-tools-copy h2{font-size:clamp(2.5rem,4vw,4.1rem);margin:17px 0}
+.raids-tools-copy p{font-size:1rem;color:#b8bfca;line-height:1.7;max-width:535px}
+.raids-tools-panel{background:#1a2331;border:1px solid #66523f;border-radius:13px;overflow:hidden;box-shadow:0 19px 47px #0003}
+.raids-tools-panel-top{display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid #514b4a;background:#232735;padding:16px 20px;color:#f1b26c;font-size:.67rem;letter-spacing:.12em;font-weight:800}
+.raids-tools-workflow{padding:12px 24px}
+.raids-tools-workflow>div{display:grid;grid-template-columns:32px 1fr;grid-template-rows:auto auto;gap:3px 12px;padding:15px 0;border-bottom:1px solid #49505a}
+.raids-tools-count{grid-row:1/3;color:#f2ac62;font-weight:850;font-size:.8rem;align-self:center}
+.raids-tools-workflow strong{font-size:.9rem}
+.raids-tools-workflow small{color:#aeb7c4;font-size:.8rem}
+.raids-tools-commands{display:grid;grid-template-columns:auto 1fr auto 1fr;gap:10px;align-items:center;margin:0 24px 24px;padding:12px;border:1px solid #464955;border-radius:7px;background:#111a27}
+.raids-tools-commands code{background:#8f532c31;color:#ffc17c;padding:5px 8px;font-size:.85rem;border-radius:4px}
+.raids-tools-commands span{font-size:.7rem;color:#a9b4c2}
+.raids-section-final{background:#10141f;padding-top:20px}
+.raids-final-panel{display:flex;justify-content:space-between;align-items:center;gap:30px;border:1px solid #7c563d;border-radius:16px;padding:45px;background:radial-gradient(ellipse at 15% 50%,#ae562c35,transparent 48%),linear-gradient(115deg,#242334,#181d29)}
+.raids-final-panel h2{font-size:clamp(2rem,3.5vw,3.6rem);margin:15px 0 12px}
+.raids-final-panel p{color:#b8beca;font-size:.94rem;margin:0;line-height:1.65}
+.raids-final-actions{display:flex;flex-direction:column;min-width:200px;gap:12px}
+.raids-draft-note{color:#7f8a9c;font-size:.69rem;padding-top:22px;line-height:1.6}
+@media(max-width:1050px){.raids-hero-inner{grid-template-columns:1fr .86fr;min-height:570px}.raids-hero h1{font-size:clamp(2.7rem,4.7vw,4.6rem)}.raids-environment-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:820px){.raids-hero-inner{grid-template-columns:1fr;gap:18px;padding-block:45px 65px}.raids-back{margin-bottom:35px}.raids-hero-art{width:min(100%,590px);margin-inline:auto}.raids-strip-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.raids-strip-grid>div:nth-child(2){border-right:0}.raids-strip-grid>div:nth-child(-n+2){border-bottom:1px solid #57505a79}.raids-section{padding-block:64px}.raids-section-intro{flex-direction:column;align-items:flex-start;gap:15px}.raids-section-intro>p{max-width:650px}.raids-experience-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.raids-flow-layout,.raids-tools-layout{grid-template-columns:1fr;gap:30px}.raids-final-panel{flex-direction:column;align-items:stretch;padding:30px}.raids-final-actions{flex-direction:row;min-width:0}}
+@media(max-width:610px){.raids-hero h1{font-size:clamp(2.4rem,9vw,3.6rem)}.raids-hero-copy>p{font-size:1rem}.raids-button{width:100%}.raids-strip-grid>div{padding:17px 11px}.raids-strip-grid strong{font-size:.78rem}.raids-strip-grid small{font-size:.67rem}.raids-experience-grid,.raids-environment-grid{grid-template-columns:1fr}.raids-experience{min-height:190px}.raids-environment{min-height:130px}.raids-environment>span{margin-bottom:12px}.raids-section-intro h2,.raids-flow-copy h2,.raids-tools-copy h2{font-size:clamp(2.2rem,8.5vw,3.1rem)}.raids-stage-list{padding:13px 20px}.raids-stage-list li{gap:12px}.raids-tools-commands{grid-template-columns:auto 1fr}.raids-final-actions{flex-direction:column}.raids-final-panel{padding:24px}.raids-final-panel h2{font-size:2.3rem}}
+@media(prefers-reduced-motion:reduce){.raids-button,.raids-experience,.raids-environment{transition:none}}

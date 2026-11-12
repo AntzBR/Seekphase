@@ -4,15 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#1C2426">
-  <meta name="description" content="Systems for creating and operating raids and gameplay challenges.">
-  <title>UltimateRaids | Seekphase Studios</title>
+  <meta name="description" content="UltimateRaids is a PvE dungeon, boss and minigame framework for Minecraft servers. Create raids with stages, waves, objectives and custom environments.">
+  <title>UltimateRaids — Dungeons, Bosses &amp; PvE Events | Seekphase Studios</title>
   <link rel="icon" href="../assets/icons/seekphase-mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../assets/css/animations.css">
   <link rel="stylesheet" href="../assets/css/responsive.css">
+  <link rel="stylesheet" href="../assets/css/ultimateraids.css">
   <script src="../assets/js/main.js" defer></script>
 </head>
-<body>
+<body class="ultimateraids-page">
   <a class="skip-link" href="#main">Skip to main content</a>
   <header class="site-header">
     <div class="container header-inner">
@@ -40,8 +41,125 @@
       <a class="header-action" href="../projects.html">Our projects <span aria-hidden="true">↗</span></a>
     </div>
   </header>
-  <main id="main"><section class="page-hero project-page-hero project-page-violet"><div class="container detail-hero"><div class="reveal"><a class="back-link" href="../projects.html#minecraft-projects">← All projects</a><span class="eyebrow">GAMEPLAY SYSTEMS / SEEKPHASE</span><h1>UltimateRaids</h1><p>Systems for creating and operating raids and gameplay challenges.</p><span class="detail-status">Maintained</span></div><img class="detail-art" src="../assets/images/ultimateraids.svg" alt="Conceptual illustration for UltimateRaids" width="640" height="320"></div></section>
-<section class="section section-light"><div class="container detail-grid"><div class="reveal"><span class="section-kicker">PROJECT OVERVIEW</span><h2>Flexible raids and challenges for servers.</h2></div><div class="reveal"><p class="detail-body">UltimateRaids supports configurable gameplay experiences and extensions for server creators.</p><div class="topic-row"><span class="topic-chip">Raids</span><span class="topic-chip">Challenges</span><span class="topic-chip">Customization</span></div><div class="note-line">This is a first-draft presentation. Official screenshots, detailed features and project links will be added after review.</div><a class="button button-dark" href="../projects.html">Explore other projects ↗</a></div></div></section></main>
+  <main id="main" class="raids">
+  <section class="raids-hero" aria-labelledby="raids-title">
+    <div class="container raids-hero-inner">
+      <div class="raids-hero-copy reveal">
+        <a class="raids-back" href="../projects.html#minecraft-projects">← Minecraft Projects / Seekphase Studios</a>
+        <span class="raids-kicker"><span class="raids-rule" aria-hidden="true"></span> ULTIMATERAIDS / PVE FRAMEWORK</span>
+        <h1 id="raids-title">Conquer the dungeon.<br><em>Defeat the boss.</em></h1>
+        <p>Create custom PvE events, dungeons, boss encounters and complete minigames for Minecraft servers — one flexible raid framework, many different experiences.</p>
+        <div class="raids-actions">
+          <a class="raids-button raids-button-primary" href="https://builtbybit.com/resources/ultimate-raids.125228/" target="_blank" rel="noopener noreferrer">Explore UltimateRaids <span aria-hidden="true">↗</span></a>
+          <a class="raids-button raids-button-outline" href="https://wiki.tribecraft.com.br/en/ultimateraids/1/" target="_blank" rel="noopener noreferrer">Documentation <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="raids-hero-tags" aria-label="Experience types"><span>Dungeons</span><span>Bosses</span><span>Waves</span><span>Minigames</span></div>
+      </div>
+      <div class="raids-hero-art reveal">
+        <div class="raids-portal-frame">
+          <span class="raids-art-label">RAID DESIGN / CONCEPT</span>
+          <svg viewBox="0 0 660 510" role="img" aria-labelledby="raids-art-title" xmlns="http://www.w3.org/2000/svg">
+            <title id="raids-art-title">Conceptual dungeon entrance glowing with warm torchlight</title>
+            <defs>
+              <radialGradient id="raid-glow"><stop stop-color="#ffb64e" stop-opacity=".8"/><stop offset=".42" stop-color="#c65316" stop-opacity=".45"/><stop offset="1" stop-color="#1b1721" stop-opacity="0"/></radialGradient>
+              <linearGradient id="raid-floor" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#232431"/><stop offset="1" stop-color="#100f18"/></linearGradient>
+              <linearGradient id="raid-entry" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#180d14"/><stop offset="1" stop-color="#8a3117"/></linearGradient>
+            </defs>
+            <rect width="660" height="510" fill="#11151f"/>
+            <path d="M0 0h660v510H0z" fill="url(#raid-floor)"/>
+            <circle cx="334" cy="240" r="240" fill="url(#raid-glow)"/>
+            <path d="M145 460V132q0-134 185-134t185 134v328" fill="#1a1a26" stroke="#564038" stroke-width="33"/>
+            <path d="M207 437V150q0-94 123-94t123 94v287" fill="url(#raid-entry)" stroke="#a65b29" stroke-width="9"/>
+            <path d="M243 425V172q0-67 87-67t87 67v253" fill="#1b0f19" stroke="#f3993b" stroke-opacity=".7" stroke-width="3"/>
+            <path d="M0 422L243 379H417L660 422V510H0z" fill="#131923"/>
+            <g stroke="#a35a2e" stroke-width="2" opacity=".5"><path d="M0 422L330 505L660 422"/><path d="M50 450h560M112 482h436"/><path d="M150 0v422M510 0v422"/></g>
+            <g fill="#28242b" stroke="#664333" stroke-width="3"><path d="M55 118h67v275H55zM537 118h67v275h-67z"/><path d="M42 100h93v24H42zM525 100h93v24h-93z"/></g>
+            <g fill="#ffc16c"><path d="M89 170l-16 33 16 59 16-59zM571 170l-16 33 16 59 16-59z"/></g>
+            <g fill="#f18324"><path d="M89 199l-8 23 8 26 8-26zM571 199l-8 23 8 26 8-26z"/></g>
+            <path d="M286 410l24-74 20-16 20 16 24 74-44 42z" fill="#19151b" stroke="#cc6633" stroke-width="4"/>
+            <path d="M305 379h50M313 393h34" stroke="#ffc06d" stroke-width="7" stroke-linecap="round"/>
+            <path d="M0 470h660" stroke="#ed9e4d" stroke-opacity=".17" stroke-width="2"/>
+          </svg>
+          <span class="raids-art-bottom">ONE CORE <span aria-hidden="true">·</span> MANY RAID DESIGNS</span>
+        </div>
+        <span class="raids-hero-marker" aria-hidden="true">01 / ENTER THE DUNGEON</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="raids-strip" aria-label="UltimateRaids highlights">
+    <div class="container raids-strip-grid">
+      <div><span>01</span><strong>Custom encounters</strong><small>Bosses, waves &amp; objectives</small></div>
+      <div><span>02</span><strong>Flexible environments</strong><small>Worlds, arenas &amp; instances</small></div>
+      <div><span>03</span><strong>Controlled sessions</strong><small>Events &amp; minigames</small></div>
+      <div><span>04</span><strong>Creator workflow</strong><small>Builder, GUI &amp; YAML</small></div>
+    </div>
+  </section>
+
+  <section class="raids-section raids-section-core" id="experiences">
+    <div class="container">
+      <div class="raids-section-intro reveal">
+        <div><span class="raids-kicker">01 / THE FRAMEWORK</span><h2>Build complete<br><em>PvE experiences.</em></h2></div>
+        <p>From a single boss battle to a multi-stage dungeon, define how players enter, progress, fight and earn rewards.</p>
+      </div>
+      <div class="raids-experience-grid">
+        <article class="raids-experience reveal"><span class="raids-experience-index">01 / CHALLENGE</span><div class="raids-experience-glyph" aria-hidden="true">⚔</div><h3>Bosses &amp; Enemies</h3><p>Design challenging encounters with phases, minions, skills and effects.</p></article>
+        <article class="raids-experience reveal"><span class="raids-experience-index">02 / PROGRESSION</span><div class="raids-experience-glyph" aria-hidden="true">◇</div><h3>Stages &amp; Objectives</h3><p>Guide players through combat, exploration, survival and team objectives.</p></article>
+        <article class="raids-experience reveal"><span class="raids-experience-index">03 / REWARDS</span><div class="raids-experience-glyph" aria-hidden="true">✦</div><h3>Kits, Loot &amp; Skills</h3><p>Prepare loadouts, rewards and reusable gameplay configurations.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="raids-section raids-section-environments" id="environments">
+    <div class="container">
+      <div class="raids-section-intro reveal">
+        <div><span class="raids-kicker">02 / WHERE THE RAID HAPPENS</span><h2>Different worlds.<br><em>One framework.</em></h2></div>
+        <p>Match the environment to the experience: open-world events, reusable arenas or separate dungeons for each group.</p>
+      </div>
+      <div class="raids-environment-grid">
+        <article class="raids-environment reveal"><span>01</span><h3>Open World</h3><p>Run raids in an existing world.</p></article>
+        <article class="raids-environment reveal"><span>02</span><h3>Region / Arena</h3><p>Use controlled spaces for repeatable events.</p></article>
+        <article class="raids-environment reveal"><span>03</span><h3>Dynamic</h3><p>Resolve locations during gameplay.</p></article>
+        <article class="raids-environment reveal"><span>04</span><h3>Instance</h3><p>Create separate sessions using templates, schematics or void worlds.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="raids-section raids-section-flow" id="progression">
+    <div class="container raids-flow-layout">
+      <div class="raids-flow-copy reveal">
+        <span class="raids-kicker">03 / THE EXPERIENCE</span>
+        <h2>More than<br><em>one fight.</em></h2>
+        <p>Combine stages, waves and objectives to create encounters that unfold over time. Run direct PvE events or use structured minigame sessions with lobbies and controlled starts.</p>
+        <div class="raids-flow-tags"><span>Waves</span><span>Objectives</span><span>Boss phases</span><span>Minigame flow</span><span>Schedulers</span></div>
+      </div>
+      <ol class="raids-stage-list reveal" aria-label="Example raid progression">
+        <li><span>01</span><div><strong>Defeat the guards</strong><small>Enter the encounter</small></div></li>
+        <li><span>02</span><div><strong>Survive enemy waves</strong><small>Progress through combat</small></div></li>
+        <li><span>03</span><div><strong>Reach the inner chamber</strong><small>Complete the objective</small></div></li>
+        <li><span>04</span><div><strong>Defeat the final boss</strong><small>Finish the dungeon</small></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="raids-section raids-section-tools" id="builder">
+    <div class="container raids-tools-layout">
+      <div class="raids-tools-copy reveal"><span class="raids-kicker">04 / CREATE &amp; MANAGE</span><h2>Powerful tools.<br><em>Clear control.</em></h2><p>Prepare raid configurations using the visual Builder, or work directly with in-game administration and YAML.</p>
+        <div class="raids-actions"><a class="raids-button raids-button-primary" href="https://tribecraft.com.br/raids-builder/" target="_blank" rel="noopener noreferrer">Open Raid Builder <span aria-hidden="true">↗</span></a><a class="raids-button raids-button-outline" href="https://github.com/UlrichBR/UltimateRaids-Examples" target="_blank" rel="noopener noreferrer">View Examples <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <div class="raids-tools-panel reveal" aria-label="UltimateRaids tools">
+        <div class="raids-tools-panel-top"><span>ADMINISTRATION / WORKFLOW</span><span aria-hidden="true">● ● ●</span></div>
+        <div class="raids-tools-workflow"><div><span class="raids-tools-count">01</span><strong>Raid Builder</strong><small>Design configurations visually</small></div><div><span class="raids-tools-count">02</span><strong>In-game Editor</strong><small>Manage events and locations</small></div><div><span class="raids-tools-count">03</span><strong>YAML</strong><small>Fine-tune advanced behavior</small></div></div>
+        <div class="raids-tools-commands"><code>/uraid</code><span>Administration</span><code>/raid</code><span>Players</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="raids-section raids-section-final">
+    <div class="container raids-final-panel reveal"><div><span class="raids-kicker">ULTIMATERAIDS / MINECRAFT</span><h2>Design the raid.<br><em>Challenge the players.</em></h2><p>Explore the official product, documentation and example configurations.</p></div><div class="raids-final-actions"><a class="raids-button raids-button-primary" href="https://builtbybit.com/resources/ultimate-raids.125228/" target="_blank" rel="noopener noreferrer">Official Product Page <span aria-hidden="true">↗</span></a><a class="raids-button raids-button-outline" href="https://wiki.tribecraft.com.br/en/ultimateraids/1/" target="_blank" rel="noopener noreferrer">Documentation <span aria-hidden="true">↗</span></a></div></div>
+    <div class="container raids-draft-note">The dungeon illustration is a temporary design concept, not a gameplay screenshot or finalized UltimateRaids cover.</div>
+  </section>
+</main>
   <footer class="site-footer">
     <div class="container footer-inner">
       <div><a class="footer-brand" href="../index.html">seekphase<span>.</span></a><p>Independent development and publishing of games, software and digital experiences.</p></div>
