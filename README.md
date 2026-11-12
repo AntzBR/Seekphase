@@ -10,6 +10,7 @@ Primeiro esboço do site institucional e portfólio da **Seekphase Studios**.
 - Navegação **Projects → Independent Games / Minecraft Projects**, sem separar o estúdio em marcas diferentes.
 - Site de apresentação com foco nos projetos **StoneWeald**, **Obsidrel**, **UltimateClans** e **UltimateRaids**.
 - Visual *Editorial Tech*: hero grafite, verde mineral, seção de portfólio clara, progressão `Seek → Discover → Create → Evolve`.
+- Cada categoria do portfólio possui um painel editorial próprio: horizontes e linhas orgânicas para **Independent Games**; geometria modular e tons frios para **Minecraft Projects**. Ambos usam somente CSS/SVG inline.
 - HTML, CSS e JavaScript sem framework, sem build obrigatório.
 - **Journal inicialmente estático.** PHP poderá ser adicionado *somente* ao Journal se surgir necessidade real; GitHub Pages não executa PHP.
 - Nenhum login, cadastro, download, loja, banco de dados ou painel.

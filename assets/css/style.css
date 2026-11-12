@@ -38,3 +38,35 @@
 .project-category--independent .project-info p{min-height:0}
 .home-category-links{display:flex;gap:11px;align-items:center;flex-wrap:wrap;margin:-4px 0 24px}
 .home-category-links>span{font-size:.78rem;color:#5a6c62;margin-right:5px;font-weight:650}
+
+/* Portfolio categories: two distinct visual territories within the Seekphase identity. */
+.home-category-showcase{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:0 0 27px}
+.category-path{isolation:isolate;position:relative;overflow:hidden;display:flex;align-items:center;min-height:145px;padding:23px 26px;border-radius:15px;color:#f1f3ec;box-shadow:0 8px 22px rgba(22,41,39,.12);transition:transform .2s ease,box-shadow .2s ease}
+.category-path:hover{transform:translateY(-3px);box-shadow:0 14px 28px rgba(22,41,39,.18)}
+.category-path:focus-visible{outline:3px solid #9fbca4;outline-offset:3px}
+.category-path--independent{background:radial-gradient(ellipse at 84% 25%,#758b7b65,transparent 53%),linear-gradient(115deg,#283735,#182626)}
+.category-path--minecraft{background:radial-gradient(ellipse at 89% 18%,#3d918b50,transparent 50%),linear-gradient(115deg,#1c3840,#17252c)}
+.category-path-copy{position:relative;z-index:1;display:flex;flex-direction:column;align-items:flex-start;gap:6px;max-width:80%}
+.category-path-eyebrow{color:#b8d0bd;font-size:.59rem;letter-spacing:.18em;font-weight:750}
+.category-path-copy strong{display:block;font-size:clamp(1.15rem,2vw,1.55rem);letter-spacing:-.025em;line-height:1.16}
+.category-path-copy strong span{font-size:1rem;color:#c5dcc7}
+.category-path-copy>span:last-child{font-size:.82rem;color:#becfc7;line-height:1.45}
+.category-path-art{pointer-events:none;position:absolute;inset:0;opacity:.54;z-index:0}
+.category-path-art--horizon{background:repeating-radial-gradient(ellipse at 96% 100%,transparent 0 23px,#b6ccb365 24px 25px,transparent 26px 40px);mask-image:linear-gradient(to right,transparent 40%,#000 100%)}
+.category-path-art--grid{background:linear-gradient(30deg,transparent 50%,#9bcac535 50.2%,transparent 51%),linear-gradient(150deg,transparent 50%,#9bcac535 50.2%,transparent 51%),repeating-linear-gradient(0deg,transparent 0 29px,#90c0b43b 30px 31px),repeating-linear-gradient(90deg,transparent 0 29px,#90c0b43b 30px 31px);background-size:100% 100%,100% 100%,30px 30px,30px 30px;mask-image:linear-gradient(to right,transparent 46%,#000 100%)}
+.category-feature{isolation:isolate;position:relative;overflow:hidden;display:grid;grid-template-columns:1.15fr .85fr;align-items:stretch;min-height:286px;border-radius:22px;margin-bottom:20px}
+.category-feature--independent{background:linear-gradient(113deg,#233632 0%,#22352e 57%,#354d44 100%);color:#eff5ee}
+.category-feature--minecraft{background:linear-gradient(115deg,#1c3039 0%,#1a3c42 65%,#215157 100%);color:#eff5f1}
+.category-feature-copy{z-index:2;padding:clamp(30px,4vw,51px);position:relative;display:flex;flex-direction:column;align-items:flex-start}
+.category-feature-kicker{font-size:.68rem;letter-spacing:.23em;font-weight:800;color:#b5cebd}
+.category-feature h2{font-size:clamp(2.05rem,3.2vw,3.35rem);line-height:1.08;margin:12px 0 13px;color:#f3f6f1}
+.category-feature p{font-size:1rem;color:#d1dfd6;max-width:510px;line-height:1.55;margin:0 0 24px}
+.category-feature-footer{margin-top:auto;display:flex;align-items:center;gap:11px;font-size:.79rem;color:#c3d6c8;letter-spacing:.035em;font-weight:650}
+.feature-indicator{width:8px;height:8px;border-radius:50%;background:#b3d7b2;box-shadow:0 0 0 4px rgba(179,215,178,.13)}
+.category-feature-count{padding-left:14px;border-left:1px solid #97b6a369;margin-left:8px;font-size:.68rem;letter-spacing:.13em;white-space:nowrap}
+.category-feature-art{position:absolute;inset:0 0 0 49%;display:grid;place-items:center;pointer-events:none;opacity:.9}
+.category-feature-art::before{content:"";position:absolute;inset:-40px -80px -100px 0;border-radius:50%;border:1px solid rgba(208,228,211,.09);box-shadow:0 0 0 45px rgba(208,228,211,.035),0 0 0 100px rgba(208,228,211,.023)}
+.category-feature-art svg{position:relative;display:block;width:min(100%,570px);height:100%;object-fit:contain}
+.category-feature--minecraft .category-feature-art::before{border-radius:6px;transform:rotate(-22deg)}
+.category-gallery-label{display:flex;justify-content:space-between;gap:12px;color:#65796b;font-size:.68rem;font-weight:800;letter-spacing:.16em;margin:0 0 16px}
+.project-category--minecraft .category-gallery-label{color:#597c7c}
