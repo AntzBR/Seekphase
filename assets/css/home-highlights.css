@@ -1,0 +1,264 @@
+/* Homepage featured StoneWeald and intentionally smaller Minecraft projects. */
+.home-work { background:#f2f2ed; }
+.home-work .home-featured-stone {
+  position:relative;
+  isolation:isolate;
+  min-height:clamp(370px,39vw,530px);
+  overflow:hidden;
+  background:#25352e;
+  border:1px solid #766949;
+  border-radius:19px;
+  box-shadow:0 21px 45px rgba(19,35,29,.19);
+  color:#f4efe7;
+}
+.home-featured-stone .home-stone-landscape {
+  position:absolute;
+  z-index:-2;
+  inset:0;
+  width:100%;
+  height:100%;
+  max-width:none;
+  object-fit:cover;
+  object-position:center 56%;
+  transform:scale(1.012);
+  transition:transform .7s ease;
+}
+.home-featured-stone:hover .home-stone-landscape { transform:scale(1.045); }
+.home-featured-stone .home-stone-shade {
+  position:absolute;
+  z-index:-1;
+  inset:0;
+  pointer-events:none;
+  background:linear-gradient(90deg,rgba(20,28,26,.98) 0%,rgba(22,31,28,.94) 25%,rgba(26,37,33,.75) 48%,rgba(32,43,36,.15) 78%),linear-gradient(0deg,rgba(18,28,25,.36),transparent 45%);
+}
+.home-featured-stone .home-stone-content {
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:center;
+  min-height:clamp(370px,39vw,530px);
+  padding:clamp(29px,4.8vw,68px);
+  max-width:min(100%,760px);
+  position:relative;
+  z-index:1;
+}
+.home-featured-stone .home-stone-eyebrow {
+  display:flex;
+  gap:12px;
+  align-items:center;
+  color:#ebc491;
+  letter-spacing:.17em;
+  font-size:.67rem;
+  font-weight:820;
+  line-height:1.45;
+}
+.home-featured-stone .home-stone-eyebrow-rule { width:25px;height:1px;background:#c9a479;opacity:.73; }
+.home-featured-stone h3 {
+  color:#f4efe7;
+  margin:16px 0 8px;
+  font-size:clamp(3rem,6vw,6.55rem);
+  line-height:1.03;
+  letter-spacing:-.063em;
+  font-weight:790;
+}
+.home-featured-stone h3 span { color:#e6ad64; }
+.home-featured-stone .home-stone-line {
+  font-size:clamp(1.32rem,2vw,2.2rem);
+  font-weight:620;
+  line-height:1.2;
+  letter-spacing:-.02em;
+  color:#f5f0e8;
+  margin:0 0 17px;
+}
+.home-featured-stone .home-stone-description {
+  font-size:clamp(.91rem,1.2vw,1.04rem);
+  max-width:520px;
+  line-height:1.65;
+  color:#d6ddd4;
+  margin:0;
+}
+.home-featured-stone .home-stone-actions {
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:18px 23px;
+  margin-top:30px;
+}
+.home-featured-stone .home-stone-action {
+  display:inline-flex;
+  gap:24px;
+  align-items:center;
+  min-height:47px;
+  padding:12px 20px;
+  border-radius:7px;
+  background:#e6ad64;
+  color:#1a2821;
+  font-size:.83rem;
+  font-weight:820;
+  transition:transform .2s,background .2s;
+}
+.home-featured-stone .home-stone-action:hover { background:#f4c486;transform:translateY(-2px); }
+.home-featured-stone .home-stone-action:focus-visible { outline:3px solid #fff6e6;outline-offset:4px; }
+.home-featured-stone .home-stone-phase {
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  color:#e2dfd3;
+  font-size:.78rem;
+  font-weight:700;
+}
+.home-featured-stone .home-stone-phase-dot {
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:#e6ad64;
+  box-shadow:0 0 0 4px #e6ad6430;
+}
+.home-featured-stone .home-stone-art-note {
+  position:absolute;
+  z-index:1;
+  right:22px;
+  bottom:20px;
+  font-size:.6rem;
+  font-weight:750;
+  letter-spacing:.12em;
+  color:#f3e4d1;
+  text-shadow:0 2px 7px #1a2428;
+}
+.home-work .home-minecraft-projects {
+  margin-top:46px;
+}
+.home-work .home-minecraft-heading {
+  display:flex;
+  align-items:end;
+  justify-content:space-between;
+  gap:22px;
+  max-width:1120px;
+  margin:0 auto 22px;
+}
+.home-work .home-minecraft-heading h3 {
+  color:#263234;
+  font-size:clamp(1.45rem,2.25vw,2.3rem);
+  margin:8px 0 5px;
+  line-height:1.15;
+}
+.home-work .home-minecraft-heading p {
+  margin:0;
+  font-size:.9rem;
+  line-height:1.5;
+  color:#64736a;
+}
+.home-work .home-minecraft-link {
+  color:#375b4d;
+  font-size:.81rem;
+  font-weight:790;
+  white-space:nowrap;
+}
+.home-work .home-minecraft-link:hover { color:#1a3f32;text-decoration:underline; }
+.home-work .home-minecraft-grid.project-grid {
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  max-width:1120px;
+  gap:15px;
+  margin-inline:auto;
+}
+.home-minecraft-grid.project-grid > .project-card {
+  min-height:0;
+  border-radius:12px;
+  box-shadow:0 11px 22px #15282825;
+}
+.home-minecraft-grid.project-grid > .project-card .project-art {
+  flex-basis:auto;
+  aspect-ratio:1.88 / 1;
+}
+.home-minecraft-grid.project-grid > .project-card .project-art-index {
+  font-size:.51rem;
+  top:13px;
+  left:16px;
+}
+.home-minecraft-grid.project-grid > .project-card .project-art-identity { left:16px;right:11px;bottom:13px; }
+.home-minecraft-grid.project-grid > .project-card .project-art-overline { font-size:.56rem;margin-bottom:5px;letter-spacing:.13em; }
+.home-minecraft-grid.project-grid > .project-card .project-art-identity h3 { font-size:clamp(1.35rem,1.9vw,1.85rem);letter-spacing:-.04em; }
+.home-minecraft-grid.project-grid > .project-card .project-info {
+  padding:13px 16px 15px;
+  gap:11px;
+}
+.home-minecraft-grid.project-grid > .project-card .project-info-kind { font-size:.6rem; }
+.home-minecraft-grid.project-grid > .project-card .project-description p {
+  font-size:.77rem;
+  line-height:1.43;
+  min-height:0;
+}
+.home-minecraft-grid.project-grid > .project-card .project-meta { padding:0;margin-top:auto; }
+.home-minecraft-grid.project-grid > .project-card .project-status {
+  padding:4px 7px;
+  font-size:.62rem;
+}
+.home-minecraft-grid.project-grid > .project-card .project-visit { font-size:.7rem;gap:4px; }
+.home-minecraft-grid.project-grid > .project-card .project-arrow { font-size:1rem; }
+@media(max-width:900px) {
+  .home-featured-stone .home-stone-shade {
+    background:linear-gradient(90deg,rgba(19,28,25,.98),rgba(19,29,26,.84) 46%,rgba(19,29,26,.18)),linear-gradient(0deg,rgba(19,29,26,.42),transparent 60%);
+  }
+  .home-work .home-minecraft-heading { align-items:flex-start; }
+  .home-minecraft-grid.project-grid > .project-card .project-art-identity h3 { font-size:1.35rem; }
+}
+@media(max-width:720px) {
+  .home-work .home-minecraft-heading { flex-direction:column;gap:10px; }
+  .home-work .home-minecraft-grid.project-grid { grid-template-columns:1fr;gap:11px; }
+  .home-minecraft-grid.project-grid > .project-card {
+    display:grid;
+    grid-template-columns:minmax(0,43%) minmax(0,57%);
+    min-height:164px;
+    align-items:stretch;
+  }
+  .home-minecraft-grid.project-grid > .project-card .project-art {
+    height:100%;
+    width:100%;
+    aspect-ratio:auto;
+  }
+  .home-minecraft-grid.project-grid > .project-card .project-art img { height:100%;object-fit:cover; }
+  .home-minecraft-grid.project-grid > .project-card .project-art-index { display:none; }
+  .home-minecraft-grid.project-grid > .project-card .project-art-identity { left:11px;right:8px;bottom:12px; }
+  .home-minecraft-grid.project-grid > .project-card .project-art-overline { font-size:.51rem;line-height:1.2; }
+  .home-minecraft-grid.project-grid > .project-card .project-art-identity h3 {
+    font-size:clamp(1.08rem,3.7vw,1.45rem);
+    overflow-wrap:anywhere;
+  }
+  .home-minecraft-grid.project-grid > .project-card .project-info {
+    border-top:0;
+    border-left:1px solid var(--project-outline);
+    padding:15px 13px;
+    gap:12px;
+    min-width:0;
+  }
+  .home-minecraft-grid.project-grid > .project-card .project-description p { font-size:.74rem; }
+  .home-minecraft-grid.project-grid > .project-card .project-status { font-size:.58rem; }
+  .home-minecraft-grid.project-grid > .project-card .project-visit { font-size:.66rem; }
+}
+@media(max-width:520px) {
+  .home-work .home-featured-stone { min-height:470px;border-radius:15px; }
+  .home-featured-stone .home-stone-landscape { object-position:69% center; }
+  .home-featured-stone .home-stone-content {
+    min-height:470px;
+    padding:26px 22px 75px;
+    justify-content:center;
+  }
+  .home-featured-stone .home-stone-shade {
+    background:linear-gradient(90deg,rgba(22,31,27,.92),rgba(22,31,27,.38)),linear-gradient(0deg,rgba(18,27,23,.83),rgba(18,27,23,.38));
+  }
+  .home-featured-stone .home-stone-eyebrow { font-size:.54rem;gap:6px; }
+  .home-featured-stone .home-stone-eyebrow-rule { width:13px; }
+  .home-featured-stone h3 { font-size:clamp(2.8rem,10.4vw,4rem);margin-top:16px; }
+  .home-featured-stone .home-stone-description { font-size:.88rem;line-height:1.56; }
+  .home-featured-stone .home-stone-actions { margin-top:24px;align-items:flex-start;gap:15px;flex-direction:column; }
+  .home-featured-stone .home-stone-art-note { left:22px;right:14px;bottom:17px;font-size:.52rem; }
+  .home-work .home-minecraft-projects { margin-top:39px; }
+  .home-minecraft-grid.project-grid > .project-card { min-height:169px;grid-template-columns:minmax(0,43%) minmax(0,57%); }
+  .home-minecraft-grid.project-grid > .project-card .project-info { padding:13px 10px; }
+  .home-minecraft-grid.project-grid > .project-card .project-status { display:none; }
+  .home-minecraft-grid.project-grid > .project-card .project-meta { justify-content:flex-end; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .home-featured-stone .home-stone-landscape,
+  .home-featured-stone .home-stone-action {transition:none}
+}

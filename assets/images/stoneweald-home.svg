@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760" role="img" aria-labelledby="title desc">
+<title id="title">StoneWeald landscape concept</title>
+<desc id="desc">Faceted mountain landscape, amber sunset, forest and stone formations in a prehistoric stylized world</desc>
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#263a38"/><stop offset=".5" stop-color="#7d7862"/><stop offset=".83" stop-color="#d3a678"/><stop offset="1" stop-color="#dba76f"/></linearGradient>
+  <radialGradient id="sunshine"><stop stop-color="#ffdfaa" stop-opacity=".9"/><stop offset=".33" stop-color="#f2c78c" stop-opacity=".45"/><stop offset="1" stop-color="#e6ad64" stop-opacity="0"/></radialGradient>
+  <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#526850"/><stop offset="1" stop-color="#233e37"/></linearGradient>
+  <linearGradient id="haze" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#dcc59a" stop-opacity=".25"/><stop offset="1" stop-color="#e4c997" stop-opacity="0"/></linearGradient>
+  <g id="pine"><path d="M-7 0H7V54H-7Z" fill="#3c3830"/><path d="M0-145-65-13H65Z" fill="#2b493c"/><path d="M0-100-74 13H74Z" fill="#345342"/><path d="M0-57-76 40H76Z" fill="#2d4a40"/><path d="M0-145-3-50-65-13Z" fill="#54715b" opacity=".7"/><path d="M0-100 4 15 74 13Z" fill="#1b3d38" opacity=".7"/></g>
+  <g id="pine-small"><path d="M-4 0H4V33H-4Z" fill="#453e35"/><path d="M0-100-42-5H42Z" fill="#304d40"/><path d="M0-65-51 21H51Z" fill="#3b5b48"/><path d="M0-100 3-20 42-5Z" fill="#223d38" opacity=".8"/></g>
+</defs>
+<rect width="1600" height="760" fill="url(#sky)"/>
+<circle cx="1195" cy="304" r="310" fill="url(#sunshine)"/>
+<circle cx="1195" cy="300" r="102" fill="#f8dfac" opacity=".84"/>
+<ellipse cx="1180" cy="402" rx="540" ry="56" fill="#e2ba83" opacity=".22"/>
+<path d="M0 513 140 392 272 447 455 274 605 425 752 322 904 485 1100 238 1294 450 1450 335 1600 454V760H0Z" fill="#566f65"/>
+<path d="M0 513 140 392 272 447 455 274 370 478 156 489Z" fill="#7b8971"/>
+<path d="M455 274 605 425 752 322 685 525 370 478Z" fill="#435b53"/>
+<path d="M752 322 904 485 1100 238 1066 483 685 525Z" fill="#657567"/>
+<path d="M1100 238 1294 450 1450 335 1428 504 1066 483Z" fill="#3e5c51"/>
+<path d="M1450 335 1600 454V760H1428Z" fill="#6c7662"/>
+<path d="M455 274 502 350 452 330 416 374Z" fill="#c9c4ae" opacity=".54"/>
+<path d="M1100 238 1177 335 1121 305 1061 359Z" fill="#dfcfb0" opacity=".42"/>
+<path d="M0 558 155 506 360 567 565 461 757 563 920 473 1145 558 1349 460 1600 547V760H0Z" fill="#98a082"/>
+<path d="M0 558 155 506 360 567 260 615 0 640Z" fill="#a8aa8b"/>
+<path d="M360 567 565 461 757 563 667 644 260 615Z" fill="#778f76"/>
+<path d="M757 563 920 473 1145 558 1100 620 667 644Z" fill="#8f9577"/>
+<path d="M1145 558 1349 460 1600 547V760H1100Z" fill="#788b73"/>
+<rect x="0" y="450" width="1600" height="260" fill="url(#haze)"/>
+<path d="M0 657 235 572 397 630 630 545 838 647 1052 548 1298 641 1440 563 1600 615V760H0Z" fill="url(#ground)"/>
+<path d="M0 657 235 572 397 630 290 697 0 712Z" fill="#627b61"/>
+<path d="M397 630 630 545 838 647 699 714 290 697Z" fill="#405d4a"/>
+<path d="M838 647 1052 548 1298 641 1179 717 699 714Z" fill="#4c6a52"/>
+<path d="M1298 641 1440 563 1600 615V760H1179Z" fill="#304d40"/>
+<g opacity=".58">
+ <use href="#pine-small" transform="translate(920 564) scale(.44)"/><use href="#pine-small" transform="translate(982 555) scale(.51)"/>
+ <use href="#pine-small" transform="translate(1163 557) scale(.56)"/><use href="#pine-small" transform="translate(1224 551) scale(.39)"/>
+ <use href="#pine-small" transform="translate(1313 543) scale(.45)"/><use href="#pine-small" transform="translate(1433 530) scale(.64)"/>
+ <use href="#pine-small" transform="translate(1496 554) scale(.5)"/>
+</g>
+<g opacity=".87">
+ <use href="#pine-small" transform="translate(1004 641) scale(.76)"/><use href="#pine-small" transform="translate(1135 631) scale(.9)"/>
+ <use href="#pine-small" transform="translate(1191 640) scale(.66)"/><use href="#pine-small" transform="translate(1260 630) scale(.75)"/>
+ <use href="#pine" transform="translate(1345 670) scale(.9)"/><use href="#pine" transform="translate(1480 638) scale(1.02)"/>
+ <use href="#pine" transform="translate(1560 659) scale(.81)"/>
+</g>
+<path d="M0 713 197 668 384 725 593 650 842 740 1050 667 1261 739 1432 680 1600 713V760H0Z" fill="#233d34"/>
+<path d="M780 747 893 693 937 708 969 700 1022 760H780Z" fill="#677665"/>
+<path d="M893 693 937 708 914 723 870 712Z" fill="#9c9d84"/>
+<path d="M1140 760 1204 708 1243 723 1317 714 1417 760Z" fill="#535c4e"/>
+<path d="M1204 708 1243 723 1207 734 1181 724Z" fill="#a0a18a"/>
+<path d="M0 759H1600" stroke="#edc389" stroke-opacity=".25" stroke-width="2"/>
+</svg>

@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="assets/css/animations.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
   <link rel="stylesheet" href="assets/css/project-cards.css">
+  <link rel="stylesheet" href="assets/css/home-highlights.css">
   <script src="assets/js/main.js" defer></script>
 </head>
 <body>
@@ -63,48 +64,45 @@
    </div>
  </div>
 </section>
-<section class="section section-light" id="projects">
- <div class="container">
-   <div class="section-heading reveal"><div><span class="section-kicker">01 / SELECTED WORK</span><h2>Our Projects</h2><p>Original creations and tools for different communities and platforms.</p></div><a class="text-link" href="projects.html">View all projects <span aria-hidden="true">↗</span></a></div>
-   <nav class="home-category-showcase reveal" aria-label="Explore project categories">
-    <a class="category-path category-path--independent" href="projects.html#independent-games">
-      <span class="category-path-art category-path-art--horizon" aria-hidden="true"></span>
-      <span class="category-path-copy">
-        <span class="category-path-eyebrow">01 / ORIGINAL WORLDS</span>
-        <strong>Independent Games <span aria-hidden="true">↗</span></strong>
-        <span>Explore standalone worlds and experiences.</span>
-      </span>
-    </a>
-    <a class="category-path category-path--minecraft" href="projects.html#minecraft-projects">
-      <span class="category-path-art category-path-art--grid" aria-hidden="true"></span>
-      <span class="category-path-copy">
-        <span class="category-path-eyebrow">02 / CREATOR ECOSYSTEM</span>
-        <strong>Minecraft Projects <span aria-hidden="true">↗</span></strong>
-        <span>Discover tools, systems and community projects.</span>
-      </span>
-    </a>
-  </nav>
-   <div class="project-grid"><a class="project-card project-stone reveal" href="projects/stoneweald.html" aria-label="Explore StoneWeald">
-  <div class="project-art">
-    <img src="assets/images/stoneweald.svg" alt="" loading="lazy" width="640" height="320">
-    <span class="project-art-index" aria-hidden="true">01 / 04 <span>SEEKPHASE PROJECT</span></span>
-    <div class="project-art-identity">
-      <span class="project-art-overline">ORIGINAL WORLD</span>
-      <h3>StoneWeald</h3>
+<section class="section section-light home-work" id="projects">
+  <div class="container">
+    <div class="section-heading reveal">
+      <div>
+        <span class="section-kicker">01 / SELECTED WORK</span>
+        <h2>Our Projects</h2>
+        <p>Original worlds and tools built for different communities.</p>
+      </div>
+      <a class="text-link" href="projects.html">View all projects <span aria-hidden="true">↗</span></a>
     </div>
-  </div>
-  <div class="project-info">
-    <div class="project-description">
-      <span class="project-info-kind">Independent game</span>
-      <p>A living prehistoric world.</p>
-    </div>
-    <div class="project-meta">
-      <span class="project-status">In development</span>
-      <span class="project-visit">Explore <span class="project-arrow" aria-hidden="true">↗</span></span>
-    </div>
-  </div>
-</a>
-<a class="project-card project-cyan reveal" href="projects/obsidrel.html" aria-label="Explore Obsidrel">
+
+    <article class="home-featured-stone reveal" aria-labelledby="home-stone-title">
+      <img class="home-stone-landscape" src="assets/images/stoneweald-home.svg"
+           width="1600" height="760" loading="lazy" alt="">
+      <div class="home-stone-shade" aria-hidden="true"></div>
+      <div class="home-stone-content">
+        <div class="home-stone-eyebrow"><span>FEATURED PROJECT / 01</span><span class="home-stone-eyebrow-rule" aria-hidden="true"></span><span>INDEPENDENT GAME</span></div>
+        <h3 id="home-stone-title">Stone<span>Weald</span></h3>
+        <p class="home-stone-line">A living prehistoric world.</p>
+        <p class="home-stone-description">Explore an evolving world shaped by survival, discovery and the choices made along the way.</p>
+        <div class="home-stone-actions">
+          <a class="home-stone-action" href="projects/stoneweald.html">Explore StoneWeald <span aria-hidden="true">↗</span></a>
+          <span class="home-stone-phase"><span aria-hidden="true" class="home-stone-phase-dot"></span> In development</span>
+        </div>
+      </div>
+      <span class="home-stone-art-note">CONCEPT VISUAL · NOT IN-GAME FOOTAGE</span>
+    </article>
+
+    <section class="home-minecraft-projects" aria-labelledby="home-minecraft-title">
+      <div class="home-minecraft-heading reveal">
+        <div>
+          <span class="section-kicker">02 / MINECRAFT PROJECTS</span>
+          <h3 id="home-minecraft-title">Tools for creators and communities.</h3>
+          <p>Plugins, creative systems and configurable experiences.</p>
+        </div>
+        <a class="home-minecraft-link" href="projects.html#minecraft-projects">Explore Minecraft projects <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="project-grid home-minecraft-grid">
+        <a class="project-card project-cyan reveal" href="projects/obsidrel.html" aria-label="Explore Obsidrel">
   <div class="project-art">
     <img src="assets/images/obsidrel.svg" alt="" loading="lazy" width="640" height="320">
     <span class="project-art-index" aria-hidden="true">02 / 04 <span>SEEKPHASE PROJECT</span></span>
@@ -124,7 +122,7 @@
     </div>
   </div>
 </a>
-<a class="project-card project-gold reveal" href="projects/ultimateclans.html" aria-label="Explore UltimateClans">
+        <a class="project-card project-gold reveal" href="projects/ultimateclans.html" aria-label="Explore UltimateClans">
   <div class="project-art">
     <img src="assets/images/ultimateclans.svg" alt="" loading="lazy" width="640" height="320">
     <span class="project-art-index" aria-hidden="true">03 / 04 <span>SEEKPHASE PROJECT</span></span>
@@ -144,7 +142,7 @@
     </div>
   </div>
 </a>
-<a class="project-card project-crimson reveal" href="projects/raidweaver.html" aria-label="Explore RaidWeaver">
+        <a class="project-card project-crimson reveal" href="projects/raidweaver.html" aria-label="Explore RaidWeaver">
   <div class="project-art">
     <img src="assets/images/raidweaver-cover.webp" alt="" loading="lazy" width="640" height="320">
     <span class="project-art-index" aria-hidden="true">04 / 04 <span>SEEKPHASE PROJECT</span></span>
@@ -163,8 +161,10 @@
       <span class="project-visit">Explore <span class="project-arrow" aria-hidden="true">↗</span></span>
     </div>
   </div>
-</a></div>
- </div>
+</a>
+      </div>
+    </section>
+  </div>
 </section>
 <section class="section focus-section"><div class="container focus-grid">
   <div class="focus-intro reveal"><span class="section-kicker">02 / OUR FOCUS</span><h2>What we do</h2><p>Exploring what is possible through creativity, technology and thoughtful development.</p></div>
